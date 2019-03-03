@@ -58,13 +58,13 @@ def movingaverage(values, m):
    """
 return np.average(values[-m:])
 
-def indexing(stock):
+def put_index(stock):
     stock.index = stock['Date']
     return stock
     
-indexing(TCS)
-indexing(INFY)
-indexing(NIFTY)
+put_index(TCS)
+put_index(INFY)
+put_index(NIFTY)
     
     
     
