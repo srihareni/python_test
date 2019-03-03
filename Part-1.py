@@ -15,13 +15,14 @@ from matplotlib.pylab import rcParams
 rcParams['figure.figsize'] = 15,9    #figure size
 
 #importing the data
-path = 'E:/GitHub_Project_upload/done/python-test/'
+path = 'C:/Users/SRIHARINI/Desktop/dat'
 
-TCS = pd.read_csv(path + 'TCS.csv', parse_dates=['Date'])
+TCS = pd.read_csv('C:/Users/SRIHARINI/Desktop/dat/TCS.csv', parse_dates=['Date'])
 
-INFY = pd.read_csv(path + 'INFY.csv', parse_dates=['Date'])
+INFY = pd.read_csv('C:/Users/SRIHARINI/Desktop/dat/INFY.csv', parse_dates=['Date'])
 
-NIFTY = pd.read_csv(path + 'nifty_it.csv', parse_dates=['Date'])
+NIFTY = pd.read_csv('C:/Users/SRIHARINI/Desktop/dat/nifty_it.csv', parse_dates=['Date'])
+
 
 
 stocks = [TCS, INFY, NIFTY]
