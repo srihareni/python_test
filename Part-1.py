@@ -65,7 +65,30 @@ def put_index(stock):
 put_index(TCS)
 put_index(INFY)
 put_index(NIFTY)
+
+weeks = [4, 16, 28, 40, 52]
+def put_index(stock):
+    stock.index = stock['Date']
+    return stock
     
+put_index(TCS)
+put_index(INFY)
+put_index(NIFTY)
+
+def timeseriesplotting(stock, weeks = [4, 16, 28, 40, 52]):
     
+    dummytimeseries = pd.DataFrame()
+    # First Resampling into Weeks format to calculate for weeks
+    dummytimeseries['Close'] = stock['Close'].resample('W').mean() 
+     
+    for i in range(len(weeks)):
+        moving_average = dummytimeseries['Close'].rolling(weeks[i]).mean() # M.A using inbuilt function
+        dummytimeseries[" moving average of first " + str(weeks[i])+ " Weeks"] = moving_average
+        print('Moving Averages of {0} weeks: \n\n {1}' .format(weeks[i], dummytimeseries['Close']))
+    dummytimeseries.plot(title="Moving Averages of {} \n\n" .format(stock.name))
+
+timeseriesplotting(NIFTY)
+timeseriesplotting(TCS)  
+timeseriesplotting(INFY)    
     
     
