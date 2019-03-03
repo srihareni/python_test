@@ -1,0 +1,3458 @@
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  <link rel="dns-prefetch" href="https://github.githubassets.com">
+  <link rel="dns-prefetch" href="https://avatars0.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars1.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars2.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://avatars3.githubusercontent.com">
+  <link rel="dns-prefetch" href="https://github-cloud.s3.amazonaws.com">
+  <link rel="dns-prefetch" href="https://user-images.githubusercontent.com/">
+
+
+
+  <link crossorigin="anonymous" media="all" integrity="sha512-UFMpXZiU8/kG0aZl62l3OFZi0gwlVRLYrsamBbXttDRSbDmQk1ZyKj5R11ghzrHB/NaIPBuLauI34mVpsuxx5w==" rel="stylesheet" href="https://github.githubassets.com/assets/frameworks-94eca081886beb7440fa7236f4fd103f.css" />
+  
+    <link crossorigin="anonymous" media="all" integrity="sha512-eqxTRxKT94LInlg/McScBezWtiFHXzx2NUh8bTSXsscsE8e7zxJE3tueMuDN+7DpHHo3ipfX6wnDuoechvkHAA==" rel="stylesheet" href="https://github.githubassets.com/assets/github-6a52a05624a8e37c96244b9669fd07a4.css" />
+    
+    
+    
+    
+
+  <meta name="viewport" content="width=device-width">
+  
+  <title>NSEPY-Time-Series-Forecast/nifty_it_index.csv at master · Atul-Anand-Jha/NSEPY-Time-Series-Forecast</title>
+    <meta name="description" content="Redcarpetup.com assignment Intern Task. Contribute to Atul-Anand-Jha/NSEPY-Time-Series-Forecast development by creating an account on GitHub.">
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
+  <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
+  <meta property="fb:app_id" content="1401488693436528">
+
+    
+    <meta property="og:image" content="https://avatars0.githubusercontent.com/u/37977486?s=400&amp;v=4" /><meta property="og:site_name" content="GitHub" /><meta property="og:type" content="object" /><meta property="og:title" content="Atul-Anand-Jha/NSEPY-Time-Series-Forecast" /><meta property="og:url" content="https://github.com/Atul-Anand-Jha/NSEPY-Time-Series-Forecast" /><meta property="og:description" content="Redcarpetup.com assignment Intern Task. Contribute to Atul-Anand-Jha/NSEPY-Time-Series-Forecast development by creating an account on GitHub." />
+
+  <link rel="assets" href="https://github.githubassets.com/">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6Mzc5MzQ2NjMyOmI2NTRmOWQxZjEyYzc5Y2ZiNWM4MDQ0YmI4ZTc3OTk1NjQ1NThhZTZkMGJlMGI4NzVmOTFjMTRmOTkyYTYyMzg=--4054f5e978b63d1abfff62390749f752af9d2e35">
+  <meta name="pjax-timeout" content="1000">
+  <link rel="sudo-modal" href="/sessions/sudo_modal">
+  <meta name="request-id" content="2C68:2E8F:551CF5:A4CFA8:5C7BA6A2" data-pjax-transient>
+
+
+  
+
+  <meta name="selected-link" value="repo_source" data-pjax-transient>
+
+      <meta name="google-site-verification" content="KT5gs8h0wvaagLKAVWq8bbeNwnZZK1r1XQysX3xurLU">
+    <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
+    <meta name="google-site-verification" content="GXs5KoUUkNCoaAZn7wPN-t01Pywp9M3sEjnt_3_ZWPc">
+
+  <meta name="octolytics-host" content="collector.githubapp.com" /><meta name="octolytics-app-id" content="github" /><meta name="octolytics-event-url" content="https://collector.githubapp.com/github-external/browser_event" /><meta name="octolytics-dimension-request_id" content="2C68:2E8F:551CF5:A4CFA8:5C7BA6A2" /><meta name="octolytics-dimension-region_edge" content="iad" /><meta name="octolytics-dimension-region_render" content="iad" /><meta name="octolytics-actor-id" content="47131464" /><meta name="octolytics-actor-login" content="srihareni" /><meta name="octolytics-actor-hash" content="ffd69a903d7586b6ddeb120b0c30e317f606b72665645a8505e86114b7c7785d" />
+<meta name="analytics-location" content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" />
+
+
+
+    <meta name="google-analytics" content="UA-3769691-2">
+
+  <meta class="js-ga-set" name="userId" content="2cc6d8978f028cb0724357841bb24bf3">
+
+<meta class="js-ga-set" name="dimension1" content="Logged In">
+
+
+
+  
+
+      <meta name="hostname" content="github.com">
+    <meta name="user-login" content="srihareni">
+
+      <meta name="expected-hostname" content="github.com">
+    <meta name="js-proxy-site-detection-payload" content="ZDlkYmJlNzI0M2YyZmViYjA5Zjg0YjUzZDg5NmZmMWUwMDc3ZDgwYmJiZjlkNmQ2MjJjZGMwMDEzZjk5YjMzN3x7InJlbW90ZV9hZGRyZXNzIjoiMjIzLjE4Mi4yMDMuODEiLCJyZXF1ZXN0X2lkIjoiMkM2ODoyRThGOjU1MUNGNTpBNENGQTg6NUM3QkE2QTIiLCJ0aW1lc3RhbXAiOjE1NTE2MDc0NzIsImhvc3QiOiJnaXRodWIuY29tIn0=">
+
+    <meta name="enabled-features" content="UNIVERSE_BANNER,MARKETPLACE_SOCIAL_PROOF,MARKETPLACE_PLAN_RESTRICTION_EDITOR,NOTIFY_ON_BLOCK,RELATED_ISSUES,MARKETPLACE_BROWSING_V2">
+
+  <meta name="html-safe-nonce" content="f56ece41f5467adcd0753943b4f5037c35e959ea">
+
+  <meta http-equiv="x-pjax-version" content="d9aabe6bfbc512330bb3ee88a27fc183">
+  
+
+      <link href="https://github.com/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/commits/master.atom" rel="alternate" title="Recent Commits to NSEPY-Time-Series-Forecast:master" type="application/atom+xml">
+
+  <meta name="go-import" content="github.com/Atul-Anand-Jha/NSEPY-Time-Series-Forecast git https://github.com/Atul-Anand-Jha/NSEPY-Time-Series-Forecast.git">
+
+  <meta name="octolytics-dimension-user_id" content="37977486" /><meta name="octolytics-dimension-user_login" content="Atul-Anand-Jha" /><meta name="octolytics-dimension-repository_id" content="158783439" /><meta name="octolytics-dimension-repository_nwo" content="Atul-Anand-Jha/NSEPY-Time-Series-Forecast" /><meta name="octolytics-dimension-repository_public" content="true" /><meta name="octolytics-dimension-repository_is_fork" content="false" /><meta name="octolytics-dimension-repository_network_root_id" content="158783439" /><meta name="octolytics-dimension-repository_network_root_nwo" content="Atul-Anand-Jha/NSEPY-Time-Series-Forecast" /><meta name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" content="false" />
+
+
+    <link rel="canonical" href="https://github.com/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/blob/master/Data-copied/nifty_it_index.csv" data-pjax-transient>
+
+
+  <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
+
+  <meta name="browser-errors-url" content="https://api.github.com/_private/browser/errors">
+
+  <link rel="mask-icon" href="https://github.githubassets.com/pinned-octocat.svg" color="#000000">
+  <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
+
+<meta name="theme-color" content="#1e2327">
+
+
+  <meta name="u2f-support" content="true">
+
+
+  <link rel="manifest" href="/manifest.json" crossOrigin="use-credentials">
+
+  </head>
+
+  <body class="logged-in env-production page-blob">
+    
+
+  <div class="position-relative js-header-wrapper ">
+    <a href="#start-of-content" tabindex="1" class="p-3 bg-blue text-white show-on-focus js-skip-to-content">Skip to content</a>
+    <div id="js-pjax-loader-bar" class="pjax-loader-bar"><div class="progress"></div></div>
+
+    
+    
+    
+
+
+        
+<header class="Header  f5" role="banner">
+  <div class="d-flex flex-justify-between px-3 ">
+    <div class="d-flex flex-justify-between ">
+      <div class="">
+        <a class="header-logo-invertocat" href="https://github.com/" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+  <svg height="32" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+
+      </div>
+
+    </div>
+
+    <div class="HeaderMenu d-flex flex-justify-between flex-auto">
+      <nav class="d-flex" aria-label="Global">
+            <div class="">
+              <div class="header-search scoped-search site-scoped-search js-site-search position-relative js-jump-to"
+  role="combobox"
+  aria-owns="jump-to-results"
+  aria-label="Search or jump to"
+  aria-haspopup="listbox"
+  aria-expanded="false"
+>
+  <div class="position-relative">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-site-search-form" role="search" aria-label="Site" data-scope-type="Repository" data-scope-id="158783439" data-scoped-search-url="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/search" data-unscoped-search-url="/search" action="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+      <label class="form-control header-search-wrapper header-search-wrapper-jump-to position-relative d-flex flex-justify-between flex-items-center js-chromeless-input-container">
+        <input type="text"
+          class="form-control header-search-input jump-to-field js-jump-to-field js-site-search-focus js-site-search-field is-clearable"
+          data-hotkey="s,/"
+          name="q"
+          value=""
+          placeholder="Search or jump to…"
+          data-unscoped-placeholder="Search or jump to…"
+          data-scoped-placeholder="Search or jump to…"
+          autocapitalize="off"
+          aria-autocomplete="list"
+          aria-controls="jump-to-results"
+          aria-label="Search or jump to…"
+          data-jump-to-suggestions-path="/_graphql/GetSuggestedNavigationDestinations#csrf-token=hM4XRsoZuFvQCMePOrnXwkcYibuCS6mP3Wl5JT6LbZ4Y76skByWVKTHEpckut6MTc+Ong/1dOr7fuiwrMlYUfQ=="
+          spellcheck="false"
+          autocomplete="off"
+          >
+          <input type="hidden" class="js-site-search-type-field" name="type" >
+            <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="" class="mr-2 header-search-key-slash">
+
+            <div class="Box position-absolute overflow-hidden d-none jump-to-suggestions js-jump-to-suggestions-container">
+              
+<ul class="d-none js-jump-to-suggestions-template-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-suggestion" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+</ul>
+
+<ul class="d-none js-jump-to-no-results-template-container">
+  <li class="d-flex flex-justify-center flex-items-center f5 d-none js-jump-to-suggestion p-2">
+    <span class="text-gray">No suggested jump to results</span>
+  </li>
+</ul>
+
+<ul id="jump-to-results" role="listbox" class="p-0 m-0 js-navigation-container jump-to-suggestions-results-container js-jump-to-suggestions-results-container">
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-scoped-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+  
+
+<li class="d-flex flex-justify-start flex-items-center p-0 f5 navigation-item js-navigation-item js-jump-to-global-search d-none" role="option">
+  <a tabindex="-1" class="no-underline d-flex flex-auto flex-items-center jump-to-suggestions-path js-jump-to-suggestion-path js-navigation-open p-2" href="">
+    <div class="jump-to-octicon js-jump-to-octicon flex-shrink-0 mr-2 text-center d-none">
+      <svg height="16" width="16" class="octicon octicon-repo flex-shrink-0 js-jump-to-octicon-repo d-none" title="Repository" aria-label="Repository" viewBox="0 0 12 16" version="1.1" role="img"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-project flex-shrink-0 js-jump-to-octicon-project d-none" title="Project" aria-label="Project" viewBox="0 0 15 16" version="1.1" role="img"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      <svg height="16" width="16" class="octicon octicon-search flex-shrink-0 js-jump-to-octicon-search d-none" title="Search" aria-label="Search" viewBox="0 0 16 16" version="1.1" role="img"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+    </div>
+
+    <img class="avatar mr-2 flex-shrink-0 js-jump-to-suggestion-avatar d-none" alt="" aria-label="Team" src="" width="28" height="28">
+
+    <div class="jump-to-suggestion-name js-jump-to-suggestion-name flex-auto overflow-hidden text-left no-wrap css-truncate css-truncate-target">
+    </div>
+
+    <div class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none js-jump-to-badge-search">
+      <span class="js-jump-to-badge-search-text-default d-none" aria-label="in this repository">
+        In this repository
+      </span>
+      <span class="js-jump-to-badge-search-text-global d-none" aria-label="in all of GitHub">
+        All GitHub
+      </span>
+      <span aria-hidden="true" class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+
+    <div aria-hidden="true" class="border rounded-1 flex-shrink-0 bg-gray px-1 text-gray-light ml-1 f6 d-none d-on-nav-focus js-jump-to-badge-jump">
+      Jump to
+      <span class="d-inline-block ml-1 v-align-middle">↵</span>
+    </div>
+  </a>
+</li>
+
+
+    <li class="d-flex flex-justify-center flex-items-center p-0 f5 js-jump-to-suggestion">
+      <img src="https://github.githubassets.com/images/spinners/octocat-spinner-128.gif" alt="Octocat Spinner Icon" class="m-2" width="28">
+    </li>
+</ul>
+
+            </div>
+      </label>
+</form>  </div>
+</div>
+
+            </div>
+
+          <ul class="d-flex pl-2 flex-items-center text-bold list-style-none">
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g p" data-ga-click="Header, click, Nav menu - item:pulls context:user" aria-label="Pull requests you created" data-selected-links="/pulls /pulls/assigned /pulls/mentioned /pulls" href="/pulls">
+                Pull requests
+</a>            </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-hotkey="g i" data-ga-click="Header, click, Nav menu - item:issues context:user" aria-label="Issues you created" data-selected-links="/issues /issues/assigned /issues/mentioned /issues" href="/issues">
+                Issues
+</a>            </li>
+              <li class="position-relative">
+                <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:marketplace context:user" data-octo-click="marketplace_click" data-octo-dimensions="location:nav_bar" data-selected-links=" /marketplace" href="/marketplace">
+                   Marketplace
+</a>                  
+              </li>
+            <li>
+              <a class="js-selected-navigation-item HeaderNavlink px-2" data-ga-click="Header, click, Nav menu - item:explore" data-selected-links="/explore /trending /trending/developers /integrations /integrations/feature/code /integrations/feature/collaborate /integrations/feature/ship showcases showcases_search showcases_landing /explore" href="/explore">
+                Explore
+</a>            </li>
+          </ul>
+      </nav>
+
+      <div class="d-flex">
+        
+<ul class="user-nav d-flex flex-items-center list-style-none" id="user-links">
+  <li class="dropdown">
+    <span class="d-inline-block  px-2">
+      
+    <a aria-label="You have no unread notifications" class="notification-indicator tooltipped tooltipped-s  js-socket-channel js-notification-indicator" data-hotkey="g n" data-ga-click="Header, go to notifications, icon:read" data-channel="notification-changed:47131464" href="/notifications">
+        <span class="mail-status "></span>
+        <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 12v1H0v-1l.73-.58c.77-.77.81-2.55 1.19-4.42C2.69 3.23 6 2 6 2c0-.55.45-1 1-1s1 .45 1 1c0 0 3.39 1.23 4.16 5 .38 1.88.42 3.66 1.19 4.42l.66.58H14zm-7 4c1.11 0 2-.89 2-2H5c0 1.11.89 2 2 2z"/></svg>
+</a>
+    </span>
+  </li>
+
+  <li class="dropdown">
+    <details class="details-overlay details-reset d-flex px-2 flex-items-center">
+      <summary class="HeaderNavlink"
+         aria-label="Create new…"
+         data-ga-click="Header, create new, icon:add">
+        <svg class="octicon octicon-plus float-left mr-1 mt-1" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"/></svg>
+        <span class="dropdown-caret mt-1"></span>
+      </summary>
+      <details-menu class="dropdown-menu dropdown-menu-sw">
+        
+<a role="menuitem" class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
+  New repository
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="/new/import" data-ga-click="Header, import a repository">
+    Import repository
+  </a>
+
+<a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, create new gist">
+  New gist
+</a>
+
+  <a role="menuitem" class="dropdown-item" href="/organizations/new" data-ga-click="Header, create new organization">
+    New organization
+  </a>
+
+
+  <div class="dropdown-divider"></div>
+  <div class="dropdown-header">
+    <span title="Atul-Anand-Jha/NSEPY-Time-Series-Forecast">This repository</span>
+  </div>
+    <a role="menuitem" class="dropdown-item" href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/issues/new" data-ga-click="Header, create new issue" >
+      New issue
+    </a>
+
+
+      </details-menu>
+    </details>
+  </li>
+
+  <li class="dropdown">
+
+    <details class="details-overlay details-reset d-flex pl-2 flex-items-center">
+      <summary class="HeaderNavlink name mt-1"
+        aria-label="View profile and more"
+        data-ga-click="Header, show menu, icon:avatar">
+        <img alt="@srihareni" class="avatar float-left mr-1" src="https://avatars3.githubusercontent.com/u/47131464?s=40&amp;v=4" height="20" width="20">
+        <span class="dropdown-caret"></span>
+      </summary>
+      <details-menu class="dropdown-menu dropdown-menu-sw">
+        <div class="header-nav-current-user css-truncate"><a role="menuitem" class="no-underline user-profile-link px-3 pt-2 pb-2 mb-n2 mt-n1 d-block" href="/srihareni" data-ga-click="Header, go to profile, text:Signed in as">Signed in as <strong class="css-truncate-target">srihareni</strong></a></div>
+        <div role="none" class="dropdown-divider"></div>
+
+        <div class="px-3 f6 user-status-container js-user-status-context pb-1" data-url="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1">
+          
+<div class="js-user-status-container user-status-compact" data-team-hovercards-enabled>
+  <details class="js-user-status-details details-reset details-overlay details-overlay-dark">
+    <summary class="btn-link no-underline js-toggle-user-status-edit toggle-user-status-edit width-full" aria-haspopup="dialog" role="menuitem" data-hydro-click="{&quot;event_type&quot;:&quot;user_profile.click&quot;,&quot;payload&quot;:{&quot;profile_user_id&quot;:37977486,&quot;target&quot;:&quot;EDIT_USER_STATUS&quot;,&quot;user_id&quot;:47131464,&quot;client_id&quot;:&quot;1672012473.1521358194&quot;,&quot;originating_request_id&quot;:&quot;2C68:2E8F:551CF5:A4CFA8:5C7BA6A2&quot;,&quot;originating_url&quot;:&quot;https://github.com/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/blob/master/Data-copied/nifty_it_index.csv&quot;}}" data-hydro-click-hmac="c536249f90b3c89046dcc8b4502499878bc4cefe6c435d458435c1870dda51df">
+      <div class="f6 d-inline-block v-align-middle  user-status-emoji-only-header pl-0 circle lh-condensed user-status-header " style="max-width: 29px">
+        <div class="user-status-emoji-container flex-shrink-0 mr-1">
+          <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.81 12.81a6.72 6.72 0 0 1-2.17 1.45c-.83.36-1.72.53-2.64.53-.92 0-1.81-.17-2.64-.53-.81-.34-1.55-.83-2.17-1.45a6.773 6.773 0 0 1-1.45-2.17A6.59 6.59 0 0 1 1.21 8c0-.92.17-1.81.53-2.64.34-.81.83-1.55 1.45-2.17.62-.62 1.36-1.11 2.17-1.45A6.59 6.59 0 0 1 8 1.21c.92 0 1.81.17 2.64.53.81.34 1.55.83 2.17 1.45.62.62 1.11 1.36 1.45 2.17.36.83.53 1.72.53 2.64 0 .92-.17 1.81-.53 2.64-.34.81-.83 1.55-1.45 2.17zM4 6.8v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2H5.2C4.53 8 4 7.47 4 6.8zm5 0v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2h-.59C9.53 8 9 7.47 9 6.8zm4 3.2c-.72 1.88-2.91 3-5 3s-4.28-1.13-5-3c-.14-.39.23-1 .66-1h8.59c.41 0 .89.61.75 1z"/></svg>
+        </div>
+      </div>
+      <div class="d-inline-block v-align-middle user-status-message-wrapper f6 lh-condensed ws-normal pt-1">
+          <span class="link-gray">Set your status</span>
+      </div>
+</summary>    <details-dialog class="details-dialog rounded-1 anim-fade-in fast Box Box--overlay" role="dialog" tabindex="-1">
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="position-relative flex-auto js-user-status-form" action="/users/status?compact=1&amp;link_mentions=0&amp;truncate=1" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="Ru9bj/MiSVdWZmmmgW0TtOwHbydLVz66POrHKWdbE+voISWGCHa89RQpt+Vw25DfXjPQOS9QFf4d+OlKeUMFyw==" />
+        <div class="Box-header bg-gray border-bottom p-3">
+          <button class="Box-btn-octicon js-toggle-user-status-edit btn-octicon float-right" type="reset" aria-label="Close dialog" data-close-dialog>
+            <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+          </button>
+          <h3 class="Box-title f5 text-bold text-gray-dark">Edit status</h3>
+        </div>
+        <input type="hidden" name="emoji" class="js-user-status-emoji-field" value="">
+        <input type="hidden" name="organization_id" class="js-user-status-org-id-field" value="">
+        <div class="px-3 py-2 text-gray-dark">
+          <div class="js-characters-remaining-container js-suggester-container position-relative mt-2">
+            <div class="input-group d-table form-group my-0 js-user-status-form-group">
+              <span class="input-group-button d-table-cell v-align-middle" style="width: 1%">
+                <button type="button" aria-label="Choose an emoji" class="btn-outline btn js-toggle-user-status-emoji-picker bg-white btn-open-emoji-picker">
+                  <span class="js-user-status-original-emoji" hidden></span>
+                  <span class="js-user-status-custom-emoji"></span>
+                  <span class="js-user-status-no-emoji-icon" >
+                    <svg class="octicon octicon-smiley" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8zm4.81 12.81a6.72 6.72 0 0 1-2.17 1.45c-.83.36-1.72.53-2.64.53-.92 0-1.81-.17-2.64-.53-.81-.34-1.55-.83-2.17-1.45a6.773 6.773 0 0 1-1.45-2.17A6.59 6.59 0 0 1 1.21 8c0-.92.17-1.81.53-2.64.34-.81.83-1.55 1.45-2.17.62-.62 1.36-1.11 2.17-1.45A6.59 6.59 0 0 1 8 1.21c.92 0 1.81.17 2.64.53.81.34 1.55.83 2.17 1.45.62.62 1.11 1.36 1.45 2.17.36.83.53 1.72.53 2.64 0 .92-.17 1.81-.53 2.64-.34.81-.83 1.55-1.45 2.17zM4 6.8v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2H5.2C4.53 8 4 7.47 4 6.8zm5 0v-.59c0-.66.53-1.19 1.2-1.19h.59c.66 0 1.19.53 1.19 1.19v.59c0 .67-.53 1.2-1.19 1.2h-.59C9.53 8 9 7.47 9 6.8zm4 3.2c-.72 1.88-2.91 3-5 3s-4.28-1.13-5-3c-.14-.39.23-1 .66-1h8.59c.41 0 .89.61.75 1z"/></svg>
+                  </span>
+                </button>
+              </span>
+              <input type="text" autocomplete="off" autofocus data-maxlength="80" class="js-suggester-field d-table-cell width-full form-control js-user-status-message-field js-characters-remaining-field" placeholder="What's happening?" name="message" required value="" aria-label="What is your current status?">
+              <div class="error">Could not update your status, please try again.</div>
+            </div>
+            <div class="suggester-container">
+              <div class="suggester js-suggester js-navigation-container" data-url="/autocomplete/user-suggestions" data-no-org-url="/autocomplete/user-suggestions" data-org-url="/suggestions" hidden>
+              </div>
+            </div>
+            <div style="margin-left: 53px" class="my-1 text-small label-characters-remaining js-characters-remaining" data-suffix="remaining" hidden>
+              80 remaining
+            </div>
+          </div>
+          <include-fragment class="js-user-status-emoji-picker" data-url="/users/status/emoji"></include-fragment>
+          <div class="overflow-auto" style="max-height: 33vh">
+            <div class="user-status-suggestions js-user-status-suggestions">
+              <h4 class="f6 text-normal my-3">Suggestions:</h4>
+              <div class="mx-3 mt-2 clearfix">
+                  <div class="float-left col-6">
+                      <button type="button" value=":palm_tree:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="palm_tree" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f334.png">🌴</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message" style="border-left: 1px solid transparent">
+                          On vacation
+                        </div>
+                      </button>
+                      <button type="button" value=":face_with_thermometer:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="face_with_thermometer" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f912.png">🤒</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message" style="border-left: 1px solid transparent">
+                          Out sick
+                        </div>
+                      </button>
+                  </div>
+                  <div class="float-left col-6">
+                      <button type="button" value=":house:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="house" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3e0.png">🏠</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message" style="border-left: 1px solid transparent">
+                          Working from home
+                        </div>
+                      </button>
+                      <button type="button" value=":dart:" class="d-flex flex-items-baseline flex-items-stretch lh-condensed f6 btn-link link-gray no-underline js-predefined-user-status mb-1">
+                        <div class="emoji-status-width mr-2 v-align-middle js-predefined-user-status-emoji">
+                          <g-emoji alias="dart" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f3af.png">🎯</g-emoji>
+                        </div>
+                        <div class="d-flex flex-items-center no-underline js-predefined-user-status-message" style="border-left: 1px solid transparent">
+                          Focusing
+                        </div>
+                      </button>
+                  </div>
+              </div>
+            </div>
+            <div class="user-status-limited-availability-container">
+              <div class="form-checkbox my-0">
+                <input type="checkbox" name="limited_availability" value="1" class="js-user-status-limited-availability-checkbox" data-default-message="I may be slow to respond." aria-describedby="limited-availability-help-text-truncate-true" id="limited-availability-truncate-true">
+                <label class="d-block f5 text-gray-dark mb-1" for="limited-availability-truncate-true">
+                  Busy
+                </label>
+                <p class="note" id="limited-availability-help-text-truncate-true">
+                  When others mention you, assign you, or request your review,
+                  GitHub will let them know that you have limited availability.
+                </p>
+              </div>
+            </div>
+          </div>
+          <include-fragment class="js-user-status-org-picker" data-url="/users/status/organizations"></include-fragment>
+        </div>
+        <div class="d-flex flex-items-center flex-justify-between p-3 border-top">
+          <button type="submit" disabled class="width-full btn btn-primary mr-2 js-user-status-submit">
+            Set status
+          </button>
+          <button type="button" disabled class="width-full js-clear-user-status-button btn ml-2 ">
+            Clear status
+          </button>
+        </div>
+</form>    </details-dialog>
+  </details>
+</div>
+
+        </div>
+        <div role="none" class="dropdown-divider"></div>
+
+        <a role="menuitem" class="dropdown-item" href="/srihareni" data-ga-click="Header, go to profile, text:your profile">Your profile</a>
+        <a role="menuitem" class="dropdown-item" href="/srihareni?tab=repositories" data-ga-click="Header, go to repositories, text:your repositories">Your repositories</a>
+
+        <a role="menuitem" class="dropdown-item" href="/srihareni?tab=projects" data-ga-click="Header, go to projects, text:your projects">Your projects</a>
+
+        <a role="menuitem" class="dropdown-item" href="/srihareni?tab=stars" data-ga-click="Header, go to starred repos, text:your stars">Your stars</a>
+          <a role="menuitem" class="dropdown-item" href="https://gist.github.com/" data-ga-click="Header, your gists, text:your gists">Your gists</a>
+
+        <div role="none" class="dropdown-divider"></div>
+        <a role="menuitem" class="dropdown-item" href="https://help.github.com" data-ga-click="Header, go to help, text:help">Help</a>
+        <a role="menuitem" class="dropdown-item" href="/settings/profile" data-ga-click="Header, go to settings, icon:settings">Settings</a>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="logout-form" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="Vs/AK+bPnYBIpMjRFd8nMINys9ER+7lgis0njLWcISPdrwxq+R5WIf1HhwxseRkZqWsuYOJb+614mU6gtl5CHA==" />
+          
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout" role="menuitem">
+            Sign out
+          </button>
+</form>      </details-menu>
+    </details>
+  </li>
+</ul>
+
+
+
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="sr-only right-0" action="/logout" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="3gl2+HTKz3H00fo/fbZusYvV4wNCaFdCe/nTYI7/zYVVabq5axsE0EEyteIEEFCYocx+srHIFY+JrbpMjT2uug==" />
+          <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
+            Sign out
+          </button>
+</form>      </div>
+    </div>
+  </div>
+</header>
+
+      
+
+  </div>
+
+  <div id="start-of-content" class="show-on-focus"></div>
+
+    <div id="js-flash-container">
+
+</div>
+
+
+
+  <div class="application-main " data-commit-hovercards-enabled>
+        <div itemscope itemtype="http://schema.org/SoftwareSourceCode" class="">
+    <main id="js-repo-pjax-container" data-pjax-container >
+      
+
+
+  
+
+
+
+
+
+  <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav  ">
+    <div class="repohead-details-container clearfix container">
+
+      <ul class="pagehead-actions">
+
+
+
+  <li>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-remote="true" class="js-social-form js-social-container" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="9L6SH9B2BvgWHxOVlRNfSPhCPDLrPxr+HXf3jkjDXpLCKZyVekmmEy42SK+cS7LST/2zGJWCxtMIzeIc+qyctQ==" />      <input type="hidden" name="repository_id" id="repository_id" value="158783439" class="form-control" />
+
+      <details class="details-reset details-overlay select-menu float-left">
+        <summary class="btn btn-sm btn-with-count select-menu-button" data-ga-click="Repository, click Watch settings, action:blob#show">
+          <span data-menu-button>
+              <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+              Watch
+          </span>
+        </summary>
+        <details-menu class="select-menu-modal position-absolute mt-5" style="z-index: 99;">
+          <div class="select-menu-header">
+            <span class="select-menu-title">Notifications</span>
+          </div>
+          <div class="select-menu-list">
+            <button type="submit" name="do" value="included" class="select-menu-item width-full" aria-checked="true" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Not watching</span>
+                <span class="description">Be notified only when participating or @mentioned.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Watch
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="release_only" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Releases only</span>
+                <span class="description">Be notified of new releases, and when participating or @mentioned.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Unwatch releases
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="subscribed" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Watching</span>
+                <span class="description">Be notified of all conversations.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-eye v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.06 2C3 2 0 8 0 8s3 6 8.06 6C13 14 16 8 16 8s-3-6-7.94-6zM8 12c-2.2 0-4-1.78-4-4 0-2.2 1.8-4 4-4 2.22 0 4 1.8 4 4 0 2.22-1.78 4-4 4zm2-4c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"/></svg>
+                  Unwatch
+                </span>
+              </div>
+            </button>
+
+            <button type="submit" name="do" value="ignore" class="select-menu-item width-full" aria-checked="false" role="menuitemradio">
+              <svg class="octicon octicon-check select-menu-item-icon" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M12 5l-8 8-4-4 1.5-1.5L4 10l6.5-6.5L12 5z"/></svg>
+              <div class="select-menu-item-text">
+                <span class="select-menu-item-heading">Ignoring</span>
+                <span class="description">Never be notified.</span>
+                <span class="hidden-select-button-text" data-menu-button-contents>
+                  <svg class="octicon octicon-mute v-align-text-bottom" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 2.81v10.38c0 .67-.81 1-1.28.53L3 10H1c-.55 0-1-.45-1-1V7c0-.55.45-1 1-1h2l3.72-3.72C7.19 1.81 8 2.14 8 2.81zm7.53 3.22l-1.06-1.06-1.97 1.97-1.97-1.97-1.06 1.06L11.44 8 9.47 9.97l1.06 1.06 1.97-1.97 1.97 1.97 1.06-1.06L13.56 8l1.97-1.97z"/></svg>
+                  Stop ignoring
+                </span>
+              </div>
+            </button>
+          </div>
+        </details-menu>
+      </details>
+      <a class="social-count js-social-count"
+        href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/watchers"
+        aria-label="1 user is watching this repository">
+        1
+      </a>
+</form>
+  </li>
+
+  <li>
+      <div class="js-toggler-container js-social-container starring-container ">
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="starred js-social-form" action="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/unstar" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="PnjGW5vtdsto6TMJgrdcp06+4D+RKFYeM7m0v3Zm2dk66nkYbmZ2yIEc2DbDzedZuPUK+hhTTDniGyaeMMyFpQ==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Unstar this repository" title="Unstar Atul-Anand-Jha/NSEPY-Time-Series-Forecast"
+        data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar">
+        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+        Unstar
+      </button>
+        <a class="social-count js-social-count" href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/stargazers"
+           aria-label="2 users starred this repository">
+          2
+        </a>
+</form>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="unstarred js-social-form" action="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/star" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="QmtFKdOn8t66MX18cBmyMdsL960kSJ3I5I2DX7fyUT/0P1dM7CehxlhHsNaGauWDaleoWKnwm6dTc1AX0eVQzg==" />
+      <input type="hidden" name="context" value="repository"></input>
+      <button
+        type="submit"
+        class="btn btn-sm btn-with-count js-toggler-target"
+        aria-label="Star this repository" title="Star Atul-Anand-Jha/NSEPY-Time-Series-Forecast"
+        data-ga-click="Repository, click star button, action:blob#show; text:Star">
+        <svg class="octicon octicon-star v-align-text-bottom" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"/></svg>
+        Star
+      </button>
+        <a class="social-count js-social-count" href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/stargazers"
+           aria-label="2 users starred this repository">
+          2
+        </a>
+</form>  </div>
+
+  </li>
+
+  <li>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="btn-with-count" action="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/fork" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="fUDXpHvlor7gi2ZdupBJo8O4sxtqQ5g/TxZTK43MR5dfLLRt/wpVbKjx5Hps02octHPWY0xpK+0SfrPosvuTrw==" />
+            <button
+                type="submit"
+                class="btn btn-sm btn-with-count"
+                data-ga-click="Repository, show fork modal, action:blob#show; text:Fork"
+                title="Fork your own copy of Atul-Anand-Jha/NSEPY-Time-Series-Forecast to your account"
+                aria-label="Fork your own copy of Atul-Anand-Jha/NSEPY-Time-Series-Forecast to your account">
+              <svg class="octicon octicon-repo-forked v-align-text-bottom" viewBox="0 0 10 16" version="1.1" width="10" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+              Fork
+            </button>
+</form>
+    <a href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/network/members" class="social-count"
+       aria-label="3 users forked this repository">
+      3
+    </a>
+  </li>
+</ul>
+
+      <h1 class="public ">
+  <svg class="octicon octicon-repo" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"/></svg>
+  <span class="author" itemprop="author"><a class="url fn" rel="author" data-hovercard-type="user" data-hovercard-url="/hovercards?user_id=37977486" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/Atul-Anand-Jha">Atul-Anand-Jha</a></span><!--
+--><span class="path-divider">/</span><!--
+--><strong itemprop="name"><a data-pjax="#js-repo-pjax-container" href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast">NSEPY-Time-Series-Forecast</a></strong>
+
+</h1>
+
+    </div>
+    
+<nav class="reponav js-repo-nav js-sidenav-container-pjax container"
+     itemscope
+     itemtype="http://schema.org/BreadcrumbList"
+    aria-label="Repository"
+     data-pjax="#js-repo-pjax-container">
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a class="js-selected-navigation-item selected reponav-item" itemprop="url" data-hotkey="g c" aria-current="page" data-selected-links="repo_source repo_downloads repo_commits repo_releases repo_tags repo_branches repo_packages /Atul-Anand-Jha/NSEPY-Time-Series-Forecast" href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast">
+      <svg class="octicon octicon-code" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M9.5 3L8 4.5 11.5 8 8 11.5 9.5 13 14 8 9.5 3zm-5 0L0 8l4.5 5L6 11.5 2.5 8 6 4.5 4.5 3z"/></svg>
+      <span itemprop="name">Code</span>
+      <meta itemprop="position" content="1">
+</a>  </span>
+
+    <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+      <a itemprop="url" data-hotkey="g i" class="js-selected-navigation-item reponav-item" data-selected-links="repo_issues repo_labels repo_milestones /Atul-Anand-Jha/NSEPY-Time-Series-Forecast/issues" href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/issues">
+        <svg class="octicon octicon-issue-opened" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg>
+        <span itemprop="name">Issues</span>
+        <span class="Counter">0</span>
+        <meta itemprop="position" content="2">
+</a>    </span>
+
+  <span itemscope itemtype="http://schema.org/ListItem" itemprop="itemListElement">
+    <a data-hotkey="g p" itemprop="url" class="js-selected-navigation-item reponav-item" data-selected-links="repo_pulls checks /Atul-Anand-Jha/NSEPY-Time-Series-Forecast/pulls" href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/pulls">
+      <svg class="octicon octicon-git-pull-request" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0 0 10 15a1.993 1.993 0 0 0 1-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 0 0-1 3.72v6.56A1.993 1.993 0 0 0 2 15a1.993 1.993 0 0 0 1-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg>
+      <span itemprop="name">Pull requests</span>
+      <span class="Counter">0</span>
+      <meta itemprop="position" content="3">
+</a>  </span>
+
+
+    <a data-hotkey="g b" class="js-selected-navigation-item reponav-item" data-selected-links="repo_projects new_repo_project repo_project /Atul-Anand-Jha/NSEPY-Time-Series-Forecast/projects" href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/projects">
+      <svg class="octicon octicon-project" viewBox="0 0 15 16" version="1.1" width="15" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M10 12h3V2h-3v10zm-4-2h3V2H6v8zm-4 4h3V2H2v12zm-1 1h13V1H1v14zM14 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h13a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"/></svg>
+      Projects
+      <span class="Counter" >0</span>
+</a>
+
+    <a class="js-selected-navigation-item reponav-item" data-hotkey="g w" data-selected-links="repo_wiki /Atul-Anand-Jha/NSEPY-Time-Series-Forecast/wiki" href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/wiki">
+      <svg class="octicon octicon-book" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M3 5h4v1H3V5zm0 3h4V7H3v1zm0 2h4V9H3v1zm11-5h-4v1h4V5zm0 2h-4v1h4V7zm0 2h-4v1h4V9zm2-6v9c0 .55-.45 1-1 1H9.5l-1 1-1-1H2c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h5.5l1 1 1-1H15c.55 0 1 .45 1 1zm-8 .5L7.5 3H2v9h6V3.5zm7-.5H9.5l-.5.5V12h6V3z"/></svg>
+      Wiki
+</a>
+    <a class="js-selected-navigation-item reponav-item" data-selected-links="repo_graphs repo_contributors dependency_graph pulse alerts security people /Atul-Anand-Jha/NSEPY-Time-Series-Forecast/pulse" href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/pulse">
+      <svg class="octicon octicon-graph" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M16 14v1H0V0h1v14h15zM5 13H3V8h2v5zm4 0H7V3h2v10zm4 0h-2V6h2v7z"/></svg>
+      Insights
+</a>
+
+</nav>
+
+
+  </div>
+<div class="container new-discussion-timeline experiment-repo-nav  ">
+  <div class="repository-content ">
+
+    
+    
+
+
+
+  
+    <a class="d-none js-permalink-shortcut" data-hotkey="y" href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/blob/c200e6eebcc5f0b030eb1f121894961066fc12ca/Data-copied/nifty_it_index.csv">Permalink</a>
+
+    <!-- blob contrib key: blob_contributors:v21:97616e62522e1aacdf7d10ae87afa4aa -->
+
+    
+
+    <div class="file-navigation">
+      
+<details class="details-reset details-overlay select-menu branch-select-menu float-left">
+  <summary class="btn btn-sm select-menu-button css-truncate"
+           data-hotkey="w"
+           
+           title="Switch branches or tags">
+    <i>Branch:</i>
+    <span class="css-truncate-target">master</span>
+  </summary>
+
+  <details-menu class="select-menu-modal position-absolute" style="z-index: 99;" src="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/ref-list/master/Data-copied/nifty_it_index.csv?source_action=show&amp;source_controller=blob" preload>
+    <include-fragment class="select-menu-loading-overlay anim-pulse">
+      <svg height="32" class="octicon octicon-octoface" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true"><path fill-rule="evenodd" d="M14.7 5.34c.13-.32.55-1.59-.13-3.31 0 0-1.05-.33-3.44 1.3-1-.28-2.07-.32-3.13-.32s-2.13.04-3.13.32c-2.39-1.64-3.44-1.3-3.44-1.3-.68 1.72-.26 2.99-.13 3.31C.49 6.21 0 7.33 0 8.69 0 13.84 3.33 15 7.98 15S16 13.84 16 8.69c0-1.36-.49-2.48-1.3-3.35zM8 14.02c-3.3 0-5.98-.15-5.98-3.35 0-.76.38-1.48 1.02-2.07 1.07-.98 2.9-.46 4.96-.46 2.07 0 3.88-.52 4.96.46.65.59 1.02 1.3 1.02 2.07 0 3.19-2.68 3.35-5.98 3.35zM5.49 9.01c-.66 0-1.2.8-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.54-1.78-1.2-1.78zm5.02 0c-.66 0-1.2.79-1.2 1.78s.54 1.79 1.2 1.79c.66 0 1.2-.8 1.2-1.79s-.53-1.78-1.2-1.78z"/></svg>
+    </include-fragment>
+  </details-menu>
+</details>
+
+      <div class="BtnGroup float-right">
+        <a href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/find/master"
+              class="js-pjax-capture-input btn btn-sm BtnGroup-item"
+              data-pjax
+              data-hotkey="t">
+          Find file
+        </a>
+        <clipboard-copy for="blob-path" class="btn btn-sm BtnGroup-item">
+          Copy path
+        </clipboard-copy>
+      </div>
+      <div id="blob-path" class="breadcrumb">
+        <span class="repo-root js-repo-root"><span class="js-path-segment"><a data-pjax="true" href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast"><span>NSEPY-Time-Series-Forecast</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a data-pjax="true" href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/tree/master/Data-copied"><span>Data-copied</span></a></span><span class="separator">/</span><strong class="final-path">nifty_it_index.csv</strong>
+      </div>
+    </div>
+
+
+    <include-fragment src="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/contributors/master/Data-copied/nifty_it_index.csv" class="commit-tease commit-loader">
+      <div>
+        Fetching contributors&hellip;
+      </div>
+
+      <div class="commit-tease-contributors">
+          <img alt="" class="loader-loading float-left" src="https://github.githubassets.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" height="16" />
+        <span class="loader-error">Cannot retrieve contributors at this time</span>
+      </div>
+</include-fragment>
+
+
+
+
+    <div class="file ">
+      
+<div class="file-header ">
+  
+  <div class="file-info float-left ">
+      250 lines (249 sloc)
+      <span class="file-info-divider"></span>
+    16.5 KB
+  </div>
+
+  <div class="file-actions d-flex ">
+
+    <div class="BtnGroup">
+      <a id="raw-url" class="btn btn-sm BtnGroup-item" href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/raw/master/Data-copied/nifty_it_index.csv">Raw</a>
+        <a class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b" href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/blame/master/Data-copied/nifty_it_index.csv">Blame</a>
+      <a rel="nofollow" class="btn btn-sm BtnGroup-item" href="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/commits/master/Data-copied/nifty_it_index.csv">History</a>
+    </div>
+
+
+    <div>
+            <a class="btn-octicon tooltipped tooltipped-nw "
+               href="https://desktop.github.com"
+               aria-label="Open this file in GitHub Desktop"
+               data-ga-click="Repository, open with desktop, type:windows">
+                <svg class="octicon octicon-device-desktop" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
+            </a>
+
+            <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" action="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/edit/master/Data-copied/nifty_it_index.csv" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="3NRSOchhiPaoUUwy02Sn9BHfQ6Oo5HnWP2Ngm47UoCqAlOOZ+zAipyIACVPj5jyVA0wMF3ZQoK1eEzHSXYT63w==" />
+              <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
+                aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
+                <svg class="octicon octicon-pencil" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
+              </button>
+</form>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" action="/Atul-Anand-Jha/NSEPY-Time-Series-Forecast/delete/master/Data-copied/nifty_it_index.csv" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="HRgpeYlmU7LwOW7fHwAnXaVQcJ1a++otykiHz0EW1yAbuwPfgJikmeC+L5bKLtLvNqrTdFS9EKvk38UftSDt+w==" />
+            <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
+              aria-label="Fork this project and delete the file" data-disable-with>
+              <svg class="octicon octicon-trashcan" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
+            </button>
+</form>    </div>
+  </div>
+</div>
+
+      
+
+  <div itemprop="text" class="blob-wrapper data type-csv ">
+      <div class="blob-interaction-bar">
+  <svg class="octicon octicon-search" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"/></svg>
+  <input type="text" name="filter" class="form-control js-csv-filter-field blob-filter" autocapitalize="off"
+         placeholder="Search this file…" aria-label="Search this file…">
+</div>
+
+  <div class="markdown-body">
+    <table class="js-csv-data csv-data js-file-line-container">
+      <thead>
+        <tr id="LC1" class="js-file-line">
+          <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+            <th>Date</th>
+            <th>Open</th>
+            <th>High</th>
+            <th>Low</th>
+            <th>Close</th>
+            <th>Volume</th>
+            <th>Turnover</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr id="LC2" class="js-file-line">
+            <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+              <td>2015-01-01</td>
+              <td>11214.8</td>
+              <td>11235.75</td>
+              <td>11166.35</td>
+              <td>11215.7</td>
+              <td>4246150</td>
+              <td>3575100000.0</td>
+          </tr>
+          <tr id="LC3" class="js-file-line">
+            <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+              <td>2015-01-02</td>
+              <td>11214.65</td>
+              <td>11399.1</td>
+              <td>11214.65</td>
+              <td>11372.1</td>
+              <td>10004862</td>
+              <td>9645600000.0</td>
+          </tr>
+          <tr id="LC4" class="js-file-line">
+            <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+              <td>2015-01-05</td>
+              <td>11369.35</td>
+              <td>11433.75</td>
+              <td>11186.95</td>
+              <td>11248.55</td>
+              <td>8858018</td>
+              <td>10590000000.0</td>
+          </tr>
+          <tr id="LC5" class="js-file-line">
+            <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+              <td>2015-01-06</td>
+              <td>11186.1</td>
+              <td>11186.1</td>
+              <td>10909.0</td>
+              <td>10959.9</td>
+              <td>12515739</td>
+              <td>13645000000.0</td>
+          </tr>
+          <tr id="LC6" class="js-file-line">
+            <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+              <td>2015-01-07</td>
+              <td>11013.2</td>
+              <td>11042.35</td>
+              <td>10889.55</td>
+              <td>10916.0</td>
+              <td>10976356</td>
+              <td>12034400000.0</td>
+          </tr>
+          <tr id="LC7" class="js-file-line">
+            <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
+              <td>2015-01-08</td>
+              <td>11031.15</td>
+              <td>11058.15</td>
+              <td>10915.05</td>
+              <td>11018.15</td>
+              <td>12975117</td>
+              <td>14856300000.000002</td>
+          </tr>
+          <tr id="LC8" class="js-file-line">
+            <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
+              <td>2015-01-09</td>
+              <td>11058.05</td>
+              <td>11484.9</td>
+              <td>10932.2</td>
+              <td>11399.65</td>
+              <td>24812224</td>
+              <td>35364200000.0</td>
+          </tr>
+          <tr id="LC9" class="js-file-line">
+            <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
+              <td>2015-01-12</td>
+              <td>11456.0</td>
+              <td>11565.85</td>
+              <td>11378.8</td>
+              <td>11543.65</td>
+              <td>16505074</td>
+              <td>17123100000.0</td>
+          </tr>
+          <tr id="LC10" class="js-file-line">
+            <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
+              <td>2015-01-13</td>
+              <td>11545.25</td>
+              <td>11546.6</td>
+              <td>11437.95</td>
+              <td>11502.8</td>
+              <td>12511358</td>
+              <td>14175100000.0</td>
+          </tr>
+          <tr id="LC11" class="js-file-line">
+            <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
+              <td>2015-01-14</td>
+              <td>11561.95</td>
+              <td>11631.55</td>
+              <td>11521.0</td>
+              <td>11614.3</td>
+              <td>12544558</td>
+              <td>14385300000.0</td>
+          </tr>
+          <tr id="LC12" class="js-file-line">
+            <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
+              <td>2015-01-15</td>
+              <td>11672.3</td>
+              <td>11774.5</td>
+              <td>11575.1</td>
+              <td>11669.85</td>
+              <td>13882213</td>
+              <td>17645600000.0</td>
+          </tr>
+          <tr id="LC13" class="js-file-line">
+            <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
+              <td>2015-01-16</td>
+              <td>11708.85</td>
+              <td>11708.85</td>
+              <td>11582.85</td>
+              <td>11659.6</td>
+              <td>12368107</td>
+              <td>17146900000.0</td>
+          </tr>
+          <tr id="LC14" class="js-file-line">
+            <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
+              <td>2015-01-19</td>
+              <td>11732.5</td>
+              <td>11797.6</td>
+              <td>11629.05</td>
+              <td>11642.75</td>
+              <td>13696381</td>
+              <td>11837500000.0</td>
+          </tr>
+          <tr id="LC15" class="js-file-line">
+            <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
+              <td>2015-01-20</td>
+              <td>11681.8</td>
+              <td>11721.9</td>
+              <td>11635.7</td>
+              <td>11695.0</td>
+              <td>11021415</td>
+              <td>12347300000.0</td>
+          </tr>
+          <tr id="LC16" class="js-file-line">
+            <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
+              <td>2015-01-21</td>
+              <td>11732.45</td>
+              <td>11838.3</td>
+              <td>11659.7</td>
+              <td>11813.7</td>
+              <td>18679282</td>
+              <td>19730700000.0</td>
+          </tr>
+          <tr id="LC17" class="js-file-line">
+            <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
+              <td>2015-01-22</td>
+              <td>11832.55</td>
+              <td>11884.5</td>
+              <td>11782.95</td>
+              <td>11850.85</td>
+              <td>15715515</td>
+              <td>16556700000.0</td>
+          </tr>
+          <tr id="LC18" class="js-file-line">
+            <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
+              <td>2015-01-23</td>
+              <td>11877.9</td>
+              <td>11921.0</td>
+              <td>11767.4</td>
+              <td>11885.15</td>
+              <td>30034833</td>
+              <td>20012100000.0</td>
+          </tr>
+          <tr id="LC19" class="js-file-line">
+            <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
+              <td>2015-01-27</td>
+              <td>11915.6</td>
+              <td>11917.25</td>
+              <td>11679.55</td>
+              <td>11693.45</td>
+              <td>17005337</td>
+              <td>18668400000.0</td>
+          </tr>
+          <tr id="LC20" class="js-file-line">
+            <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
+              <td>2015-01-28</td>
+              <td>11712.55</td>
+              <td>11821.8</td>
+              <td>11693.8</td>
+              <td>11809.55</td>
+              <td>16876897</td>
+              <td>19375900000.0</td>
+          </tr>
+          <tr id="LC21" class="js-file-line">
+            <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
+              <td>2015-01-29</td>
+              <td>11812.35</td>
+              <td>11861.5</td>
+              <td>11728.75</td>
+              <td>11824.15</td>
+              <td>15520902</td>
+              <td>21607900000.0</td>
+          </tr>
+          <tr id="LC22" class="js-file-line">
+            <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
+              <td>2015-01-30</td>
+              <td>11998.35</td>
+              <td>12003.35</td>
+              <td>11799.35</td>
+              <td>11824.75</td>
+              <td>18559078</td>
+              <td>29059500000.0</td>
+          </tr>
+          <tr id="LC23" class="js-file-line">
+            <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
+              <td>2015-02-02</td>
+              <td>11871.35</td>
+              <td>11972.6</td>
+              <td>11847.8</td>
+              <td>11943.95</td>
+              <td>17272113</td>
+              <td>23040500000.0</td>
+          </tr>
+          <tr id="LC24" class="js-file-line">
+            <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
+              <td>2015-02-03</td>
+              <td>11963.75</td>
+              <td>12000.65</td>
+              <td>11849.0</td>
+              <td>11963.9</td>
+              <td>21053605</td>
+              <td>17705900000.0</td>
+          </tr>
+          <tr id="LC25" class="js-file-line">
+            <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
+              <td>2015-02-04</td>
+              <td>12027.1</td>
+              <td>12027.1</td>
+              <td>11902.35</td>
+              <td>11938.9</td>
+              <td>14453955</td>
+              <td>12905700000.0</td>
+          </tr>
+          <tr id="LC26" class="js-file-line">
+            <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
+              <td>2015-02-05</td>
+              <td>11967.75</td>
+              <td>12295.35</td>
+              <td>11963.8</td>
+              <td>12165.15</td>
+              <td>15826989</td>
+              <td>21240100000.000004</td>
+          </tr>
+          <tr id="LC27" class="js-file-line">
+            <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
+              <td>2015-02-06</td>
+              <td>12190.7</td>
+              <td>12380.45</td>
+              <td>12186.95</td>
+              <td>12267.95</td>
+              <td>11167848</td>
+              <td>13259900000.0</td>
+          </tr>
+          <tr id="LC28" class="js-file-line">
+            <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
+              <td>2015-02-09</td>
+              <td>12160.9</td>
+              <td>12285.45</td>
+              <td>12160.9</td>
+              <td>12249.3</td>
+              <td>10996415</td>
+              <td>12210100000.0</td>
+          </tr>
+          <tr id="LC29" class="js-file-line">
+            <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
+              <td>2015-02-10</td>
+              <td>12215.2</td>
+              <td>12297.75</td>
+              <td>12129.65</td>
+              <td>12162.85</td>
+              <td>17687306</td>
+              <td>18518700000.0</td>
+          </tr>
+          <tr id="LC30" class="js-file-line">
+            <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
+              <td>2015-02-11</td>
+              <td>12198.45</td>
+              <td>12265.7</td>
+              <td>12149.35</td>
+              <td>12243.4</td>
+              <td>12905131</td>
+              <td>13637000000.0</td>
+          </tr>
+          <tr id="LC31" class="js-file-line">
+            <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
+              <td>2015-02-12</td>
+              <td>12277.2</td>
+              <td>12397.0</td>
+              <td>12253.05</td>
+              <td>12372.0</td>
+              <td>16012381</td>
+              <td>15159500000.0</td>
+          </tr>
+          <tr id="LC32" class="js-file-line">
+            <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
+              <td>2015-02-13</td>
+              <td>12369.6</td>
+              <td>12506.7</td>
+              <td>12353.25</td>
+              <td>12464.95</td>
+              <td>12674963</td>
+              <td>15273500000.0</td>
+          </tr>
+          <tr id="LC33" class="js-file-line">
+            <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
+              <td>2015-02-16</td>
+              <td>12461.75</td>
+              <td>12541.05</td>
+              <td>12457.65</td>
+              <td>12487.2</td>
+              <td>14443816</td>
+              <td>15718500000.0</td>
+          </tr>
+          <tr id="LC34" class="js-file-line">
+            <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
+              <td>2015-02-18</td>
+              <td>12511.05</td>
+              <td>12647.7</td>
+              <td>12442.7</td>
+              <td>12632.75</td>
+              <td>20825161</td>
+              <td>20474000000.0</td>
+          </tr>
+          <tr id="LC35" class="js-file-line">
+            <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
+              <td>2015-02-19</td>
+              <td>12629.05</td>
+              <td>12737.1</td>
+              <td>12628.75</td>
+              <td>12723.8</td>
+              <td>15057455</td>
+              <td>16950000000.0</td>
+          </tr>
+          <tr id="LC36" class="js-file-line">
+            <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
+              <td>2015-02-20</td>
+              <td>12750.0</td>
+              <td>12750.0</td>
+              <td>12550.75</td>
+              <td>12571.95</td>
+              <td>11383919</td>
+              <td>12248400000.0</td>
+          </tr>
+          <tr id="LC37" class="js-file-line">
+            <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
+              <td>2015-02-23</td>
+              <td>12607.35</td>
+              <td>12709.9</td>
+              <td>12475.9</td>
+              <td>12531.3</td>
+              <td>19847310</td>
+              <td>13766099999.999998</td>
+          </tr>
+          <tr id="LC38" class="js-file-line">
+            <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
+              <td>2015-02-24</td>
+              <td>12572.25</td>
+              <td>12644.1</td>
+              <td>12514.65</td>
+              <td>12566.2</td>
+              <td>14110110</td>
+              <td>14173599999.999998</td>
+          </tr>
+          <tr id="LC39" class="js-file-line">
+            <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
+              <td>2015-02-25</td>
+              <td>12621.55</td>
+              <td>12719.9</td>
+              <td>12600.05</td>
+              <td>12633.35</td>
+              <td>13377354</td>
+              <td>12720800000.0</td>
+          </tr>
+          <tr id="LC40" class="js-file-line">
+            <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
+              <td>2015-02-26</td>
+              <td>12623.8</td>
+              <td>12633.15</td>
+              <td>12429.5</td>
+              <td>12458.5</td>
+              <td>23693036</td>
+              <td>17881900000.0</td>
+          </tr>
+          <tr id="LC41" class="js-file-line">
+            <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
+              <td>2015-02-27</td>
+              <td>12511.25</td>
+              <td>12578.1</td>
+              <td>12434.65</td>
+              <td>12554.95</td>
+              <td>39838312</td>
+              <td>20933600000.0</td>
+          </tr>
+          <tr id="LC42" class="js-file-line">
+            <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
+              <td>2015-02-28</td>
+              <td>12612.05</td>
+              <td>12700.05</td>
+              <td>12493.95</td>
+              <td>12659.8</td>
+              <td>29800058</td>
+              <td>11718200000.0</td>
+          </tr>
+          <tr id="LC43" class="js-file-line">
+            <td id="L43" class="blob-num js-line-number" data-line-number="43"></td>
+              <td>2015-03-02</td>
+              <td>12700.6</td>
+              <td>12719.05</td>
+              <td>12586.15</td>
+              <td>12663.7</td>
+              <td>15906080</td>
+              <td>15320800000.0</td>
+          </tr>
+          <tr id="LC44" class="js-file-line">
+            <td id="L44" class="blob-num js-line-number" data-line-number="44"></td>
+              <td>2015-03-03</td>
+              <td>12687.25</td>
+              <td>12871.15</td>
+              <td>12635.5</td>
+              <td>12855.9</td>
+              <td>20847787</td>
+              <td>19713500000.0</td>
+          </tr>
+          <tr id="LC45" class="js-file-line">
+            <td id="L45" class="blob-num js-line-number" data-line-number="45"></td>
+              <td>2015-03-04</td>
+              <td>12885.75</td>
+              <td>12908.1</td>
+              <td>12630.55</td>
+              <td>12730.6</td>
+              <td>15783902</td>
+              <td>18764800000.0</td>
+          </tr>
+          <tr id="LC46" class="js-file-line">
+            <td id="L46" class="blob-num js-line-number" data-line-number="46"></td>
+              <td>2015-03-05</td>
+              <td>12719.1</td>
+              <td>12832.3</td>
+              <td>12615.45</td>
+              <td>12665.5</td>
+              <td>12712799</td>
+              <td>15151900000.0</td>
+          </tr>
+          <tr id="LC47" class="js-file-line">
+            <td id="L47" class="blob-num js-line-number" data-line-number="47"></td>
+              <td>2015-03-09</td>
+              <td>12599.8</td>
+              <td>12599.8</td>
+              <td>12372.45</td>
+              <td>12422.25</td>
+              <td>15075030</td>
+              <td>19056600000.0</td>
+          </tr>
+          <tr id="LC48" class="js-file-line">
+            <td id="L48" class="blob-num js-line-number" data-line-number="48"></td>
+              <td>2015-03-10</td>
+              <td>12404.35</td>
+              <td>12462.8</td>
+              <td>12307.1</td>
+              <td>12405.05</td>
+              <td>15020359</td>
+              <td>17451800000.0</td>
+          </tr>
+          <tr id="LC49" class="js-file-line">
+            <td id="L49" class="blob-num js-line-number" data-line-number="49"></td>
+              <td>2015-03-11</td>
+              <td>12414.7</td>
+              <td>12585.55</td>
+              <td>12298.5</td>
+              <td>12352.35</td>
+              <td>18633646</td>
+              <td>21949500000.0</td>
+          </tr>
+          <tr id="LC50" class="js-file-line">
+            <td id="L50" class="blob-num js-line-number" data-line-number="50"></td>
+              <td>2015-03-12</td>
+              <td>12377.2</td>
+              <td>12442.4</td>
+              <td>12329.25</td>
+              <td>12423.65</td>
+              <td>12590586</td>
+              <td>16407300000.0</td>
+          </tr>
+          <tr id="LC51" class="js-file-line">
+            <td id="L51" class="blob-num js-line-number" data-line-number="51"></td>
+              <td>2015-03-13</td>
+              <td>12478.55</td>
+              <td>12478.55</td>
+              <td>12248.45</td>
+              <td>12312.15</td>
+              <td>17452417</td>
+              <td>16123300000.0</td>
+          </tr>
+          <tr id="LC52" class="js-file-line">
+            <td id="L52" class="blob-num js-line-number" data-line-number="52"></td>
+              <td>2015-03-16</td>
+              <td>12308.95</td>
+              <td>12477.45</td>
+              <td>12297.2</td>
+              <td>12419.05</td>
+              <td>14394029</td>
+              <td>17381200000.0</td>
+          </tr>
+          <tr id="LC53" class="js-file-line">
+            <td id="L53" class="blob-num js-line-number" data-line-number="53"></td>
+              <td>2015-03-17</td>
+              <td>12459.6</td>
+              <td>12498.85</td>
+              <td>12300.85</td>
+              <td>12383.15</td>
+              <td>15605123</td>
+              <td>18245900000.0</td>
+          </tr>
+          <tr id="LC54" class="js-file-line">
+            <td id="L54" class="blob-num js-line-number" data-line-number="54"></td>
+              <td>2015-03-18</td>
+              <td>12434.25</td>
+              <td>12448.45</td>
+              <td>12256.55</td>
+              <td>12276.1</td>
+              <td>18361292</td>
+              <td>29391500000.0</td>
+          </tr>
+          <tr id="LC55" class="js-file-line">
+            <td id="L55" class="blob-num js-line-number" data-line-number="55"></td>
+              <td>2015-03-19</td>
+              <td>12298.25</td>
+              <td>12356.65</td>
+              <td>12253.1</td>
+              <td>12275.2</td>
+              <td>22006335</td>
+              <td>21624200000.0</td>
+          </tr>
+          <tr id="LC56" class="js-file-line">
+            <td id="L56" class="blob-num js-line-number" data-line-number="56"></td>
+              <td>2015-03-20</td>
+              <td>12306.6</td>
+              <td>12392.85</td>
+              <td>12274.35</td>
+              <td>12363.5</td>
+              <td>22332970</td>
+              <td>18174100000.0</td>
+          </tr>
+          <tr id="LC57" class="js-file-line">
+            <td id="L57" class="blob-num js-line-number" data-line-number="57"></td>
+              <td>2015-03-23</td>
+              <td>12364.3</td>
+              <td>12443.25</td>
+              <td>12217.75</td>
+              <td>12244.45</td>
+              <td>15526314</td>
+              <td>12994100000.0</td>
+          </tr>
+          <tr id="LC58" class="js-file-line">
+            <td id="L58" class="blob-num js-line-number" data-line-number="58"></td>
+              <td>2015-03-24</td>
+              <td>12266.2</td>
+              <td>12345.05</td>
+              <td>12154.45</td>
+              <td>12180.0</td>
+              <td>18635698</td>
+              <td>15838699999.999998</td>
+          </tr>
+          <tr id="LC59" class="js-file-line">
+            <td id="L59" class="blob-num js-line-number" data-line-number="59"></td>
+              <td>2015-03-25</td>
+              <td>12214.55</td>
+              <td>12256.4</td>
+              <td>12135.5</td>
+              <td>12225.6</td>
+              <td>20385357</td>
+              <td>16186199999.999998</td>
+          </tr>
+          <tr id="LC60" class="js-file-line">
+            <td id="L60" class="blob-num js-line-number" data-line-number="60"></td>
+              <td>2015-03-26</td>
+              <td>12168.3</td>
+              <td>12204.45</td>
+              <td>11865.85</td>
+              <td>11902.1</td>
+              <td>24114701</td>
+              <td>22855200000.0</td>
+          </tr>
+          <tr id="LC61" class="js-file-line">
+            <td id="L61" class="blob-num js-line-number" data-line-number="61"></td>
+              <td>2015-03-27</td>
+              <td>11978.05</td>
+              <td>12146.9</td>
+              <td>11926.95</td>
+              <td>11968.5</td>
+              <td>25148358</td>
+              <td>20229400000.0</td>
+          </tr>
+          <tr id="LC62" class="js-file-line">
+            <td id="L62" class="blob-num js-line-number" data-line-number="62"></td>
+              <td>2015-03-30</td>
+              <td>12010.65</td>
+              <td>12127.6</td>
+              <td>11971.4</td>
+              <td>12100.85</td>
+              <td>19114043</td>
+              <td>15454100000.0</td>
+          </tr>
+          <tr id="LC63" class="js-file-line">
+            <td id="L63" class="blob-num js-line-number" data-line-number="63"></td>
+              <td>2015-03-31</td>
+              <td>12159.05</td>
+              <td>12206.8</td>
+              <td>12005.2</td>
+              <td>12083.0</td>
+              <td>20925080</td>
+              <td>15756000000.0</td>
+          </tr>
+          <tr id="LC64" class="js-file-line">
+            <td id="L64" class="blob-num js-line-number" data-line-number="64"></td>
+              <td>2015-04-01</td>
+              <td>11997.45</td>
+              <td>12008.55</td>
+              <td>11880.15</td>
+              <td>11952.2</td>
+              <td>22785639</td>
+              <td>18084900000.0</td>
+          </tr>
+          <tr id="LC65" class="js-file-line">
+            <td id="L65" class="blob-num js-line-number" data-line-number="65"></td>
+              <td>2015-04-06</td>
+              <td>11970.2</td>
+              <td>11997.3</td>
+              <td>11872.65</td>
+              <td>11969.25</td>
+              <td>22313207</td>
+              <td>17913900000.0</td>
+          </tr>
+          <tr id="LC66" class="js-file-line">
+            <td id="L66" class="blob-num js-line-number" data-line-number="66"></td>
+              <td>2015-04-07</td>
+              <td>11999.25</td>
+              <td>12062.25</td>
+              <td>11881.5</td>
+              <td>11989.35</td>
+              <td>18185399</td>
+              <td>15514500000.0</td>
+          </tr>
+          <tr id="LC67" class="js-file-line">
+            <td id="L67" class="blob-num js-line-number" data-line-number="67"></td>
+              <td>2015-04-08</td>
+              <td>12072.2</td>
+              <td>12249.1</td>
+              <td>12060.25</td>
+              <td>12214.3</td>
+              <td>22589842</td>
+              <td>18275900000.0</td>
+          </tr>
+          <tr id="LC68" class="js-file-line">
+            <td id="L68" class="blob-num js-line-number" data-line-number="68"></td>
+              <td>2015-04-09</td>
+              <td>12296.75</td>
+              <td>12323.7</td>
+              <td>12171.15</td>
+              <td>12279.4</td>
+              <td>16386979</td>
+              <td>16145200000.0</td>
+          </tr>
+          <tr id="LC69" class="js-file-line">
+            <td id="L69" class="blob-num js-line-number" data-line-number="69"></td>
+              <td>2015-04-10</td>
+              <td>12249.05</td>
+              <td>12335.75</td>
+              <td>12244.2</td>
+              <td>12294.75</td>
+              <td>16529907</td>
+              <td>12912900000.0</td>
+          </tr>
+          <tr id="LC70" class="js-file-line">
+            <td id="L70" class="blob-num js-line-number" data-line-number="70"></td>
+              <td>2015-04-13</td>
+              <td>12329.1</td>
+              <td>12349.45</td>
+              <td>12222.9</td>
+              <td>12333.8</td>
+              <td>16440526</td>
+              <td>10387200000.0</td>
+          </tr>
+          <tr id="LC71" class="js-file-line">
+            <td id="L71" class="blob-num js-line-number" data-line-number="71"></td>
+              <td>2015-04-15</td>
+              <td>12335.15</td>
+              <td>12369.4</td>
+              <td>12121.55</td>
+              <td>12154.55</td>
+              <td>20643272</td>
+              <td>15146000000.0</td>
+          </tr>
+          <tr id="LC72" class="js-file-line">
+            <td id="L72" class="blob-num js-line-number" data-line-number="72"></td>
+              <td>2015-04-16</td>
+              <td>12187.55</td>
+              <td>12198.05</td>
+              <td>11947.05</td>
+              <td>12059.0</td>
+              <td>29861650</td>
+              <td>18371100000.0</td>
+          </tr>
+          <tr id="LC73" class="js-file-line">
+            <td id="L73" class="blob-num js-line-number" data-line-number="73"></td>
+              <td>2015-04-17</td>
+              <td>11972.35</td>
+              <td>11972.35</td>
+              <td>11758.75</td>
+              <td>11803.05</td>
+              <td>25776375</td>
+              <td>23086300000.0</td>
+          </tr>
+          <tr id="LC74" class="js-file-line">
+            <td id="L74" class="blob-num js-line-number" data-line-number="74"></td>
+              <td>2015-04-20</td>
+              <td>11805.5</td>
+              <td>11815.7</td>
+              <td>11538.85</td>
+              <td>11562.2</td>
+              <td>19374740</td>
+              <td>17858400000.0</td>
+          </tr>
+          <tr id="LC75" class="js-file-line">
+            <td id="L75" class="blob-num js-line-number" data-line-number="75"></td>
+              <td>2015-04-21</td>
+              <td>11472.6</td>
+              <td>11602.8</td>
+              <td>11415.0</td>
+              <td>11558.4</td>
+              <td>28704508</td>
+              <td>21551600000.0</td>
+          </tr>
+          <tr id="LC76" class="js-file-line">
+            <td id="L76" class="blob-num js-line-number" data-line-number="76"></td>
+              <td>2015-04-22</td>
+              <td>11552.5</td>
+              <td>11552.5</td>
+              <td>11345.1</td>
+              <td>11492.0</td>
+              <td>29316560</td>
+              <td>24753900000.0</td>
+          </tr>
+          <tr id="LC77" class="js-file-line">
+            <td id="L77" class="blob-num js-line-number" data-line-number="77"></td>
+              <td>2015-04-23</td>
+              <td>11571.05</td>
+              <td>11572.05</td>
+              <td>11410.4</td>
+              <td>11451.55</td>
+              <td>22676328</td>
+              <td>21469400000.0</td>
+          </tr>
+          <tr id="LC78" class="js-file-line">
+            <td id="L78" class="blob-num js-line-number" data-line-number="78"></td>
+              <td>2015-04-24</td>
+              <td>11474.4</td>
+              <td>11523.0</td>
+              <td>11077.3</td>
+              <td>11132.25</td>
+              <td>33250761</td>
+              <td>36851600000.0</td>
+          </tr>
+          <tr id="LC79" class="js-file-line">
+            <td id="L79" class="blob-num js-line-number" data-line-number="79"></td>
+              <td>2015-04-27</td>
+              <td>11166.4</td>
+              <td>11170.5</td>
+              <td>10941.75</td>
+              <td>11097.9</td>
+              <td>25778777</td>
+              <td>21486400000.0</td>
+          </tr>
+          <tr id="LC80" class="js-file-line">
+            <td id="L80" class="blob-num js-line-number" data-line-number="80"></td>
+              <td>2015-04-28</td>
+              <td>11097.2</td>
+              <td>11097.2</td>
+              <td>10979.2</td>
+              <td>11052.95</td>
+              <td>21748906</td>
+              <td>18302400000.0</td>
+          </tr>
+          <tr id="LC81" class="js-file-line">
+            <td id="L81" class="blob-num js-line-number" data-line-number="81"></td>
+              <td>2015-04-29</td>
+              <td>11039.0</td>
+              <td>11150.55</td>
+              <td>10954.0</td>
+              <td>11094.4</td>
+              <td>21642220</td>
+              <td>15436300000.000002</td>
+          </tr>
+          <tr id="LC82" class="js-file-line">
+            <td id="L82" class="blob-num js-line-number" data-line-number="82"></td>
+              <td>2015-04-30</td>
+              <td>11056.5</td>
+              <td>11056.5</td>
+              <td>10916.65</td>
+              <td>11001.05</td>
+              <td>44619697</td>
+              <td>24742500000.0</td>
+          </tr>
+          <tr id="LC83" class="js-file-line">
+            <td id="L83" class="blob-num js-line-number" data-line-number="83"></td>
+              <td>2015-05-04</td>
+              <td>11087.5</td>
+              <td>11217.2</td>
+              <td>11044.25</td>
+              <td>11191.45</td>
+              <td>24105159</td>
+              <td>15830300000.0</td>
+          </tr>
+          <tr id="LC84" class="js-file-line">
+            <td id="L84" class="blob-num js-line-number" data-line-number="84"></td>
+              <td>2015-05-05</td>
+              <td>11252.3</td>
+              <td>11264.35</td>
+              <td>11115.5</td>
+              <td>11170.25</td>
+              <td>23245719</td>
+              <td>16649400000.0</td>
+          </tr>
+          <tr id="LC85" class="js-file-line">
+            <td id="L85" class="blob-num js-line-number" data-line-number="85"></td>
+              <td>2015-05-06</td>
+              <td>11186.35</td>
+              <td>11191.7</td>
+              <td>10921.75</td>
+              <td>10938.85</td>
+              <td>21427168</td>
+              <td>17943900000.0</td>
+          </tr>
+          <tr id="LC86" class="js-file-line">
+            <td id="L86" class="blob-num js-line-number" data-line-number="86"></td>
+              <td>2015-05-07</td>
+              <td>10934.8</td>
+              <td>11172.15</td>
+              <td>10900.9</td>
+              <td>11127.75</td>
+              <td>20232917</td>
+              <td>14444000000.0</td>
+          </tr>
+          <tr id="LC87" class="js-file-line">
+            <td id="L87" class="blob-num js-line-number" data-line-number="87"></td>
+              <td>2015-05-08</td>
+              <td>11209.15</td>
+              <td>11268.6</td>
+              <td>11134.2</td>
+              <td>11172.05</td>
+              <td>14833619</td>
+              <td>12406300000.000002</td>
+          </tr>
+          <tr id="LC88" class="js-file-line">
+            <td id="L88" class="blob-num js-line-number" data-line-number="88"></td>
+              <td>2015-05-11</td>
+              <td>11225.15</td>
+              <td>11351.05</td>
+              <td>11184.65</td>
+              <td>11324.55</td>
+              <td>16210415</td>
+              <td>13733300000.0</td>
+          </tr>
+          <tr id="LC89" class="js-file-line">
+            <td id="L89" class="blob-num js-line-number" data-line-number="89"></td>
+              <td>2015-05-12</td>
+              <td>11337.7</td>
+              <td>11337.7</td>
+              <td>11101.25</td>
+              <td>11118.45</td>
+              <td>15553985</td>
+              <td>13224400000.0</td>
+          </tr>
+          <tr id="LC90" class="js-file-line">
+            <td id="L90" class="blob-num js-line-number" data-line-number="90"></td>
+              <td>2015-05-13</td>
+              <td>11168.7</td>
+              <td>11225.55</td>
+              <td>11040.55</td>
+              <td>11170.5</td>
+              <td>15567676</td>
+              <td>12594800000.0</td>
+          </tr>
+          <tr id="LC91" class="js-file-line">
+            <td id="L91" class="blob-num js-line-number" data-line-number="91"></td>
+              <td>2015-05-14</td>
+              <td>11185.6</td>
+              <td>11185.6</td>
+              <td>11021.85</td>
+              <td>11093.6</td>
+              <td>11405303</td>
+              <td>9328700000.0</td>
+          </tr>
+          <tr id="LC92" class="js-file-line">
+            <td id="L92" class="blob-num js-line-number" data-line-number="92"></td>
+              <td>2015-05-15</td>
+              <td>11109.7</td>
+              <td>11208.2</td>
+              <td>11099.2</td>
+              <td>11171.9</td>
+              <td>13739827</td>
+              <td>10188000000.0</td>
+          </tr>
+          <tr id="LC93" class="js-file-line">
+            <td id="L93" class="blob-num js-line-number" data-line-number="93"></td>
+              <td>2015-05-18</td>
+              <td>11200.4</td>
+              <td>11294.45</td>
+              <td>11147.15</td>
+              <td>11279.45</td>
+              <td>15340671</td>
+              <td>14323100000.0</td>
+          </tr>
+          <tr id="LC94" class="js-file-line">
+            <td id="L94" class="blob-num js-line-number" data-line-number="94"></td>
+              <td>2015-05-19</td>
+              <td>11264.8</td>
+              <td>11425.15</td>
+              <td>11260.2</td>
+              <td>11372.2</td>
+              <td>18508134</td>
+              <td>15437800000.0</td>
+          </tr>
+          <tr id="LC95" class="js-file-line">
+            <td id="L95" class="blob-num js-line-number" data-line-number="95"></td>
+              <td>2015-05-20</td>
+              <td>11438.7</td>
+              <td>11583.05</td>
+              <td>11438.7</td>
+              <td>11571.7</td>
+              <td>16636054</td>
+              <td>13842100000.0</td>
+          </tr>
+          <tr id="LC96" class="js-file-line">
+            <td id="L96" class="blob-num js-line-number" data-line-number="96"></td>
+              <td>2015-05-21</td>
+              <td>11589.0</td>
+              <td>11638.1</td>
+              <td>11572.6</td>
+              <td>11618.6</td>
+              <td>14274561</td>
+              <td>13751900000.0</td>
+          </tr>
+          <tr id="LC97" class="js-file-line">
+            <td id="L97" class="blob-num js-line-number" data-line-number="97"></td>
+              <td>2015-05-22</td>
+              <td>11584.7</td>
+              <td>11745.75</td>
+              <td>11562.5</td>
+              <td>11728.4</td>
+              <td>15469572</td>
+              <td>14653900000.000002</td>
+          </tr>
+          <tr id="LC98" class="js-file-line">
+            <td id="L98" class="blob-num js-line-number" data-line-number="98"></td>
+              <td>2015-05-25</td>
+              <td>11740.75</td>
+              <td>11784.35</td>
+              <td>11602.1</td>
+              <td>11623.35</td>
+              <td>12204690</td>
+              <td>9656500000.0</td>
+          </tr>
+          <tr id="LC99" class="js-file-line">
+            <td id="L99" class="blob-num js-line-number" data-line-number="99"></td>
+              <td>2015-05-26</td>
+              <td>11608.75</td>
+              <td>11649.7</td>
+              <td>11562.05</td>
+              <td>11581.9</td>
+              <td>11485852</td>
+              <td>9862600000.0</td>
+          </tr>
+          <tr id="LC100" class="js-file-line">
+            <td id="L100" class="blob-num js-line-number" data-line-number="100"></td>
+              <td>2015-05-27</td>
+              <td>11481.45</td>
+              <td>11481.45</td>
+              <td>11338.05</td>
+              <td>11367.5</td>
+              <td>34196705</td>
+              <td>23480100000.000004</td>
+          </tr>
+          <tr id="LC101" class="js-file-line">
+            <td id="L101" class="blob-num js-line-number" data-line-number="101"></td>
+              <td>2015-05-28</td>
+              <td>11368.0</td>
+              <td>11483.75</td>
+              <td>11321.65</td>
+              <td>11450.85</td>
+              <td>25687562</td>
+              <td>21899800000.0</td>
+          </tr>
+          <tr id="LC102" class="js-file-line">
+            <td id="L102" class="blob-num js-line-number" data-line-number="102"></td>
+              <td>2015-05-29</td>
+              <td>11443.1</td>
+              <td>11647.05</td>
+              <td>11411.15</td>
+              <td>11575.05</td>
+              <td>21994515</td>
+              <td>26837900000.0</td>
+          </tr>
+          <tr id="LC103" class="js-file-line">
+            <td id="L103" class="blob-num js-line-number" data-line-number="103"></td>
+              <td>2015-06-01</td>
+              <td>11561.9</td>
+              <td>11629.55</td>
+              <td>11496.05</td>
+              <td>11525.65</td>
+              <td>6488920</td>
+              <td>7631900000.000001</td>
+          </tr>
+          <tr id="LC104" class="js-file-line">
+            <td id="L104" class="blob-num js-line-number" data-line-number="104"></td>
+              <td>2015-06-02</td>
+              <td>11523.85</td>
+              <td>11563.95</td>
+              <td>11326.7</td>
+              <td>11347.9</td>
+              <td>8320203</td>
+              <td>11301300000.000002</td>
+          </tr>
+          <tr id="LC105" class="js-file-line">
+            <td id="L105" class="blob-num js-line-number" data-line-number="105"></td>
+              <td>2015-06-03</td>
+              <td>11383.1</td>
+              <td>11421.55</td>
+              <td>11299.75</td>
+              <td>11361.1</td>
+              <td>10771997</td>
+              <td>11263300000.0</td>
+          </tr>
+          <tr id="LC106" class="js-file-line">
+            <td id="L106" class="blob-num js-line-number" data-line-number="106"></td>
+              <td>2015-06-04</td>
+              <td>11375.85</td>
+              <td>11455.9</td>
+              <td>11331.85</td>
+              <td>11379.2</td>
+              <td>10994711</td>
+              <td>14162900000.0</td>
+          </tr>
+          <tr id="LC107" class="js-file-line">
+            <td id="L107" class="blob-num js-line-number" data-line-number="107"></td>
+              <td>2015-06-05</td>
+              <td>11376.45</td>
+              <td>11444.0</td>
+              <td>11282.3</td>
+              <td>11291.55</td>
+              <td>9222361</td>
+              <td>11431199999.999998</td>
+          </tr>
+          <tr id="LC108" class="js-file-line">
+            <td id="L108" class="blob-num js-line-number" data-line-number="108"></td>
+              <td>2015-06-08</td>
+              <td>11302.75</td>
+              <td>11303.6</td>
+              <td>11196.5</td>
+              <td>11238.6</td>
+              <td>7174359</td>
+              <td>8758800000.0</td>
+          </tr>
+          <tr id="LC109" class="js-file-line">
+            <td id="L109" class="blob-num js-line-number" data-line-number="109"></td>
+              <td>2015-06-09</td>
+              <td>11235.3</td>
+              <td>11254.45</td>
+              <td>11114.3</td>
+              <td>11142.95</td>
+              <td>9772047</td>
+              <td>11457500000.0</td>
+          </tr>
+          <tr id="LC110" class="js-file-line">
+            <td id="L110" class="blob-num js-line-number" data-line-number="110"></td>
+              <td>2015-06-10</td>
+              <td>11145.4</td>
+              <td>11423.75</td>
+              <td>11136.4</td>
+              <td>11401.7</td>
+              <td>10375358</td>
+              <td>12413699999.999998</td>
+          </tr>
+          <tr id="LC111" class="js-file-line">
+            <td id="L111" class="blob-num js-line-number" data-line-number="111"></td>
+              <td>2015-06-11</td>
+              <td>11420.0</td>
+              <td>11444.75</td>
+              <td>11213.4</td>
+              <td>11227.15</td>
+              <td>9863136</td>
+              <td>11846600000.0</td>
+          </tr>
+          <tr id="LC112" class="js-file-line">
+            <td id="L112" class="blob-num js-line-number" data-line-number="112"></td>
+              <td>2015-06-12</td>
+              <td>11222.8</td>
+              <td>11267.0</td>
+              <td>10930.45</td>
+              <td>11049.35</td>
+              <td>10397130</td>
+              <td>12966000000.0</td>
+          </tr>
+          <tr id="LC113" class="js-file-line">
+            <td id="L113" class="blob-num js-line-number" data-line-number="113"></td>
+              <td>2015-06-15</td>
+              <td>11022.7</td>
+              <td>11170.05</td>
+              <td>10933.4</td>
+              <td>11093.85</td>
+              <td>7860544</td>
+              <td>8476000000.0</td>
+          </tr>
+          <tr id="LC114" class="js-file-line">
+            <td id="L114" class="blob-num js-line-number" data-line-number="114"></td>
+              <td>2015-06-16</td>
+              <td>11111.8</td>
+              <td>11135.25</td>
+              <td>11046.0</td>
+              <td>11119.2</td>
+              <td>7153751</td>
+              <td>6866200000.0</td>
+          </tr>
+          <tr id="LC115" class="js-file-line">
+            <td id="L115" class="blob-num js-line-number" data-line-number="115"></td>
+              <td>2015-06-17</td>
+              <td>11181.9</td>
+              <td>11221.15</td>
+              <td>11114.35</td>
+              <td>11143.5</td>
+              <td>9431119</td>
+              <td>9684900000.0</td>
+          </tr>
+          <tr id="LC116" class="js-file-line">
+            <td id="L116" class="blob-num js-line-number" data-line-number="116"></td>
+              <td>2015-06-18</td>
+              <td>11191.75</td>
+              <td>11259.15</td>
+              <td>11164.1</td>
+              <td>11215.35</td>
+              <td>9612244</td>
+              <td>9076800000.0</td>
+          </tr>
+          <tr id="LC117" class="js-file-line">
+            <td id="L117" class="blob-num js-line-number" data-line-number="117"></td>
+              <td>2015-06-19</td>
+              <td>11260.9</td>
+              <td>11353.25</td>
+              <td>11222.25</td>
+              <td>11243.65</td>
+              <td>14338486</td>
+              <td>12526500000.0</td>
+          </tr>
+          <tr id="LC118" class="js-file-line">
+            <td id="L118" class="blob-num js-line-number" data-line-number="118"></td>
+              <td>2015-06-22</td>
+              <td>11266.9</td>
+              <td>11446.8</td>
+              <td>11260.95</td>
+              <td>11429.8</td>
+              <td>8220207</td>
+              <td>7600400000.0</td>
+          </tr>
+          <tr id="LC119" class="js-file-line">
+            <td id="L119" class="blob-num js-line-number" data-line-number="119"></td>
+              <td>2015-06-23</td>
+              <td>11473.0</td>
+              <td>11479.6</td>
+              <td>11327.2</td>
+              <td>11341.15</td>
+              <td>7753653</td>
+              <td>7758200000.000001</td>
+          </tr>
+          <tr id="LC120" class="js-file-line">
+            <td id="L120" class="blob-num js-line-number" data-line-number="120"></td>
+              <td>2015-06-24</td>
+              <td>11400.35</td>
+              <td>11409.75</td>
+              <td>11324.35</td>
+              <td>11353.75</td>
+              <td>11817301</td>
+              <td>10645200000.0</td>
+          </tr>
+          <tr id="LC121" class="js-file-line">
+            <td id="L121" class="blob-num js-line-number" data-line-number="121"></td>
+              <td>2015-06-25</td>
+              <td>11332.45</td>
+              <td>11332.7</td>
+              <td>11188.55</td>
+              <td>11210.4</td>
+              <td>14616477</td>
+              <td>12789700000.0</td>
+          </tr>
+          <tr id="LC122" class="js-file-line">
+            <td id="L122" class="blob-num js-line-number" data-line-number="122"></td>
+              <td>2015-06-26</td>
+              <td>11238.8</td>
+              <td>11388.45</td>
+              <td>11238.8</td>
+              <td>11362.55</td>
+              <td>9837711</td>
+              <td>8920300000.0</td>
+          </tr>
+          <tr id="LC123" class="js-file-line">
+            <td id="L123" class="blob-num js-line-number" data-line-number="123"></td>
+              <td>2015-06-29</td>
+              <td>11181.25</td>
+              <td>11230.2</td>
+              <td>10998.2</td>
+              <td>11133.65</td>
+              <td>17798757</td>
+              <td>12673000000.0</td>
+          </tr>
+          <tr id="LC124" class="js-file-line">
+            <td id="L124" class="blob-num js-line-number" data-line-number="124"></td>
+              <td>2015-06-30</td>
+              <td>11101.6</td>
+              <td>11144.2</td>
+              <td>11016.75</td>
+              <td>11037.4</td>
+              <td>20432617</td>
+              <td>14456800000.0</td>
+          </tr>
+          <tr id="LC125" class="js-file-line">
+            <td id="L125" class="blob-num js-line-number" data-line-number="125"></td>
+              <td>2015-07-01</td>
+              <td>11053.65</td>
+              <td>11239.75</td>
+              <td>11053.65</td>
+              <td>11213.6</td>
+              <td>11203755</td>
+              <td>9476400000.0</td>
+          </tr>
+          <tr id="LC126" class="js-file-line">
+            <td id="L126" class="blob-num js-line-number" data-line-number="126"></td>
+              <td>2015-07-02</td>
+              <td>11246.5</td>
+              <td>11247.5</td>
+              <td>11161.3</td>
+              <td>11187.25</td>
+              <td>7915388</td>
+              <td>7354700000.0</td>
+          </tr>
+          <tr id="LC127" class="js-file-line">
+            <td id="L127" class="blob-num js-line-number" data-line-number="127"></td>
+              <td>2015-07-03</td>
+              <td>11162.9</td>
+              <td>11214.65</td>
+              <td>11135.0</td>
+              <td>11198.65</td>
+              <td>6793457</td>
+              <td>5745100000.0</td>
+          </tr>
+          <tr id="LC128" class="js-file-line">
+            <td id="L128" class="blob-num js-line-number" data-line-number="128"></td>
+              <td>2015-07-06</td>
+              <td>11079.2</td>
+              <td>11239.0</td>
+              <td>11072.55</td>
+              <td>11209.6</td>
+              <td>7684659</td>
+              <td>6794400000.000001</td>
+          </tr>
+          <tr id="LC129" class="js-file-line">
+            <td id="L129" class="blob-num js-line-number" data-line-number="129"></td>
+              <td>2015-07-07</td>
+              <td>11216.55</td>
+              <td>11264.55</td>
+              <td>11126.2</td>
+              <td>11143.85</td>
+              <td>8057280</td>
+              <td>7524600000.0</td>
+          </tr>
+          <tr id="LC130" class="js-file-line">
+            <td id="L130" class="blob-num js-line-number" data-line-number="130"></td>
+              <td>2015-07-08</td>
+              <td>11079.95</td>
+              <td>11143.9</td>
+              <td>10980.05</td>
+              <td>11021.8</td>
+              <td>10958051</td>
+              <td>10742700000.0</td>
+          </tr>
+          <tr id="LC131" class="js-file-line">
+            <td id="L131" class="blob-num js-line-number" data-line-number="131"></td>
+              <td>2015-07-09</td>
+              <td>11043.65</td>
+              <td>11065.4</td>
+              <td>10808.35</td>
+              <td>10828.7</td>
+              <td>11055212</td>
+              <td>12299800000.0</td>
+          </tr>
+          <tr id="LC132" class="js-file-line">
+            <td id="L132" class="blob-num js-line-number" data-line-number="132"></td>
+              <td>2015-07-10</td>
+              <td>10950.25</td>
+              <td>10950.25</td>
+              <td>10759.85</td>
+              <td>10798.25</td>
+              <td>12483008</td>
+              <td>16944500000.0</td>
+          </tr>
+          <tr id="LC133" class="js-file-line">
+            <td id="L133" class="blob-num js-line-number" data-line-number="133"></td>
+              <td>2015-07-13</td>
+              <td>10840.65</td>
+              <td>11011.65</td>
+              <td>10840.65</td>
+              <td>10998.85</td>
+              <td>9446174</td>
+              <td>9475100000.0</td>
+          </tr>
+          <tr id="LC134" class="js-file-line">
+            <td id="L134" class="blob-num js-line-number" data-line-number="134"></td>
+              <td>2015-07-14</td>
+              <td>11024.4</td>
+              <td>11067.55</td>
+              <td>10945.05</td>
+              <td>11043.85</td>
+              <td>7884734</td>
+              <td>7756300000.0</td>
+          </tr>
+          <tr id="LC135" class="js-file-line">
+            <td id="L135" class="blob-num js-line-number" data-line-number="135"></td>
+              <td>2015-07-15</td>
+              <td>11050.5</td>
+              <td>11165.5</td>
+              <td>11050.5</td>
+              <td>11150.25</td>
+              <td>8269479</td>
+              <td>8223400000.0</td>
+          </tr>
+          <tr id="LC136" class="js-file-line">
+            <td id="L136" class="blob-num js-line-number" data-line-number="136"></td>
+              <td>2015-07-16</td>
+              <td>11191.15</td>
+              <td>11218.75</td>
+              <td>11123.15</td>
+              <td>11191.6</td>
+              <td>8500008</td>
+              <td>7890500000.0</td>
+          </tr>
+          <tr id="LC137" class="js-file-line">
+            <td id="L137" class="blob-num js-line-number" data-line-number="137"></td>
+              <td>2015-07-17</td>
+              <td>11239.7</td>
+              <td>11306.4</td>
+              <td>11227.4</td>
+              <td>11269.2</td>
+              <td>10570702</td>
+              <td>8760700000.0</td>
+          </tr>
+          <tr id="LC138" class="js-file-line">
+            <td id="L138" class="blob-num js-line-number" data-line-number="138"></td>
+              <td>2015-07-20</td>
+              <td>11270.4</td>
+              <td>11307.9</td>
+              <td>11197.85</td>
+              <td>11266.95</td>
+              <td>8618661</td>
+              <td>7647300000.0</td>
+          </tr>
+          <tr id="LC139" class="js-file-line">
+            <td id="L139" class="blob-num js-line-number" data-line-number="139"></td>
+              <td>2015-07-21</td>
+              <td>11366.6</td>
+              <td>11798.2</td>
+              <td>11366.6</td>
+              <td>11655.45</td>
+              <td>27720978</td>
+              <td>28376000000.0</td>
+          </tr>
+          <tr id="LC140" class="js-file-line">
+            <td id="L140" class="blob-num js-line-number" data-line-number="140"></td>
+              <td>2015-07-22</td>
+              <td>11647.5</td>
+              <td>11687.2</td>
+              <td>11509.15</td>
+              <td>11643.75</td>
+              <td>11766775</td>
+              <td>12065200000.0</td>
+          </tr>
+          <tr id="LC141" class="js-file-line">
+            <td id="L141" class="blob-num js-line-number" data-line-number="141"></td>
+              <td>2015-07-23</td>
+              <td>11640.65</td>
+              <td>11719.05</td>
+              <td>11537.7</td>
+              <td>11558.7</td>
+              <td>11732414</td>
+              <td>11571900000.0</td>
+          </tr>
+          <tr id="LC142" class="js-file-line">
+            <td id="L142" class="blob-num js-line-number" data-line-number="142"></td>
+              <td>2015-07-24</td>
+              <td>11568.85</td>
+              <td>11588.9</td>
+              <td>11452.25</td>
+              <td>11464.15</td>
+              <td>9525365</td>
+              <td>8807100000.0</td>
+          </tr>
+          <tr id="LC143" class="js-file-line">
+            <td id="L143" class="blob-num js-line-number" data-line-number="143"></td>
+              <td>2015-07-27</td>
+              <td>11437.55</td>
+              <td>11438.0</td>
+              <td>11342.5</td>
+              <td>11362.45</td>
+              <td>12162185</td>
+              <td>11444100000.0</td>
+          </tr>
+          <tr id="LC144" class="js-file-line">
+            <td id="L144" class="blob-num js-line-number" data-line-number="144"></td>
+              <td>2015-07-28</td>
+              <td>11378.8</td>
+              <td>11432.45</td>
+              <td>11283.7</td>
+              <td>11306.25</td>
+              <td>15300982</td>
+              <td>13257900000.0</td>
+          </tr>
+          <tr id="LC145" class="js-file-line">
+            <td id="L145" class="blob-num js-line-number" data-line-number="145"></td>
+              <td>2015-07-29</td>
+              <td>11369.45</td>
+              <td>11494.85</td>
+              <td>11330.65</td>
+              <td>11470.7</td>
+              <td>10386211</td>
+              <td>11006300000.000002</td>
+          </tr>
+          <tr id="LC146" class="js-file-line">
+            <td id="L146" class="blob-num js-line-number" data-line-number="146"></td>
+              <td>2015-07-30</td>
+              <td>11530.3</td>
+              <td>11539.45</td>
+              <td>11365.05</td>
+              <td>11394.55</td>
+              <td>17524742</td>
+              <td>16623699999.999998</td>
+          </tr>
+          <tr id="LC147" class="js-file-line">
+            <td id="L147" class="blob-num js-line-number" data-line-number="147"></td>
+              <td>2015-07-31</td>
+              <td>11434.9</td>
+              <td>11622.2</td>
+              <td>11434.9</td>
+              <td>11594.15</td>
+              <td>10516985</td>
+              <td>11266400000.000002</td>
+          </tr>
+          <tr id="LC148" class="js-file-line">
+            <td id="L148" class="blob-num js-line-number" data-line-number="148"></td>
+              <td>2015-08-03</td>
+              <td>11490.6</td>
+              <td>11572.6</td>
+              <td>11441.5</td>
+              <td>11466.4</td>
+              <td>10341354</td>
+              <td>11012000000.0</td>
+          </tr>
+          <tr id="LC149" class="js-file-line">
+            <td id="L149" class="blob-num js-line-number" data-line-number="149"></td>
+              <td>2015-08-04</td>
+              <td>11480.7</td>
+              <td>11489.15</td>
+              <td>11379.15</td>
+              <td>11415.55</td>
+              <td>11885605</td>
+              <td>12514300000.0</td>
+          </tr>
+          <tr id="LC150" class="js-file-line">
+            <td id="L150" class="blob-num js-line-number" data-line-number="150"></td>
+              <td>2015-08-05</td>
+              <td>11470.2</td>
+              <td>11632.2</td>
+              <td>11460.0</td>
+              <td>11618.0</td>
+              <td>8826022</td>
+              <td>8191500000.0</td>
+          </tr>
+          <tr id="LC151" class="js-file-line">
+            <td id="L151" class="blob-num js-line-number" data-line-number="151"></td>
+              <td>2015-08-06</td>
+              <td>11698.9</td>
+              <td>11739.1</td>
+              <td>11576.25</td>
+              <td>11616.5</td>
+              <td>9179852</td>
+              <td>10206300000.0</td>
+          </tr>
+          <tr id="LC152" class="js-file-line">
+            <td id="L152" class="blob-num js-line-number" data-line-number="152"></td>
+              <td>2015-08-07</td>
+              <td>11604.45</td>
+              <td>11663.6</td>
+              <td>11580.35</td>
+              <td>11597.05</td>
+              <td>7127683</td>
+              <td>7772400000.0</td>
+          </tr>
+          <tr id="LC153" class="js-file-line">
+            <td id="L153" class="blob-num js-line-number" data-line-number="153"></td>
+              <td>2015-08-10</td>
+              <td>11623.1</td>
+              <td>11696.85</td>
+              <td>11500.4</td>
+              <td>11573.9</td>
+              <td>5893113</td>
+              <td>6810000000.0</td>
+          </tr>
+          <tr id="LC154" class="js-file-line">
+            <td id="L154" class="blob-num js-line-number" data-line-number="154"></td>
+              <td>2015-08-11</td>
+              <td>11637.25</td>
+              <td>11740.85</td>
+              <td>11605.9</td>
+              <td>11711.15</td>
+              <td>9042485</td>
+              <td>10105300000.0</td>
+          </tr>
+          <tr id="LC155" class="js-file-line">
+            <td id="L155" class="blob-num js-line-number" data-line-number="155"></td>
+              <td>2015-08-12</td>
+              <td>11731.7</td>
+              <td>12026.05</td>
+              <td>11731.7</td>
+              <td>12006.8</td>
+              <td>14684514</td>
+              <td>16192600000.0</td>
+          </tr>
+          <tr id="LC156" class="js-file-line">
+            <td id="L156" class="blob-num js-line-number" data-line-number="156"></td>
+              <td>2015-08-13</td>
+              <td>12029.5</td>
+              <td>12092.05</td>
+              <td>11916.3</td>
+              <td>11956.1</td>
+              <td>11503549</td>
+              <td>11826600000.0</td>
+          </tr>
+          <tr id="LC157" class="js-file-line">
+            <td id="L157" class="blob-num js-line-number" data-line-number="157"></td>
+              <td>2015-08-14</td>
+              <td>11968.3</td>
+              <td>12129.0</td>
+              <td>11961.1</td>
+              <td>12048.45</td>
+              <td>8163202</td>
+              <td>9297400000.0</td>
+          </tr>
+          <tr id="LC158" class="js-file-line">
+            <td id="L158" class="blob-num js-line-number" data-line-number="158"></td>
+              <td>2015-08-17</td>
+              <td>12057.65</td>
+              <td>12058.05</td>
+              <td>11920.25</td>
+              <td>12001.75</td>
+              <td>5813559</td>
+              <td>5649299999.999999</td>
+          </tr>
+          <tr id="LC159" class="js-file-line">
+            <td id="L159" class="blob-num js-line-number" data-line-number="159"></td>
+              <td>2015-08-18</td>
+              <td>12068.35</td>
+              <td>12250.1</td>
+              <td>12060.15</td>
+              <td>12159.4</td>
+              <td>8733323</td>
+              <td>9533100000.0</td>
+          </tr>
+          <tr id="LC160" class="js-file-line">
+            <td id="L160" class="blob-num js-line-number" data-line-number="160"></td>
+              <td>2015-08-19</td>
+              <td>12215.55</td>
+              <td>12314.4</td>
+              <td>12165.4</td>
+              <td>12249.1</td>
+              <td>9509622</td>
+              <td>10610900000.0</td>
+          </tr>
+          <tr id="LC161" class="js-file-line">
+            <td id="L161" class="blob-num js-line-number" data-line-number="161"></td>
+              <td>2015-08-20</td>
+              <td>12269.5</td>
+              <td>12269.5</td>
+              <td>11969.3</td>
+              <td>11985.25</td>
+              <td>11525076</td>
+              <td>12592900000.0</td>
+          </tr>
+          <tr id="LC162" class="js-file-line">
+            <td id="L162" class="blob-num js-line-number" data-line-number="162"></td>
+              <td>2015-08-21</td>
+              <td>12009.8</td>
+              <td>12102.8</td>
+              <td>11825.05</td>
+              <td>12032.3</td>
+              <td>13519573</td>
+              <td>16142700000.0</td>
+          </tr>
+          <tr id="LC163" class="js-file-line">
+            <td id="L163" class="blob-num js-line-number" data-line-number="163"></td>
+              <td>2015-08-24</td>
+              <td>11750.45</td>
+              <td>11797.95</td>
+              <td>11393.0</td>
+              <td>11455.15</td>
+              <td>18489060</td>
+              <td>20577100000.0</td>
+          </tr>
+          <tr id="LC164" class="js-file-line">
+            <td id="L164" class="blob-num js-line-number" data-line-number="164"></td>
+              <td>2015-08-25</td>
+              <td>11524.85</td>
+              <td>11615.5</td>
+              <td>11140.8</td>
+              <td>11376.75</td>
+              <td>18912332</td>
+              <td>19658900000.0</td>
+          </tr>
+          <tr id="LC165" class="js-file-line">
+            <td id="L165" class="blob-num js-line-number" data-line-number="165"></td>
+              <td>2015-08-26</td>
+              <td>11395.5</td>
+              <td>11548.85</td>
+              <td>11172.2</td>
+              <td>11284.1</td>
+              <td>15743530</td>
+              <td>16443800000.000002</td>
+          </tr>
+          <tr id="LC166" class="js-file-line">
+            <td id="L166" class="blob-num js-line-number" data-line-number="166"></td>
+              <td>2015-08-27</td>
+              <td>11438.7</td>
+              <td>11476.8</td>
+              <td>11351.05</td>
+              <td>11396.9</td>
+              <td>19464261</td>
+              <td>21785900000.0</td>
+          </tr>
+          <tr id="LC167" class="js-file-line">
+            <td id="L167" class="blob-num js-line-number" data-line-number="167"></td>
+              <td>2015-08-28</td>
+              <td>11545.3</td>
+              <td>11645.05</td>
+              <td>11534.85</td>
+              <td>11588.25</td>
+              <td>10260637</td>
+              <td>11550000000.0</td>
+          </tr>
+          <tr id="LC168" class="js-file-line">
+            <td id="L168" class="blob-num js-line-number" data-line-number="168"></td>
+              <td>2015-08-31</td>
+              <td>11691.65</td>
+              <td>11691.65</td>
+              <td>11537.65</td>
+              <td>11605.7</td>
+              <td>14353599</td>
+              <td>16212500000.0</td>
+          </tr>
+          <tr id="LC169" class="js-file-line">
+            <td id="L169" class="blob-num js-line-number" data-line-number="169"></td>
+              <td>2015-09-01</td>
+              <td>11563.55</td>
+              <td>11712.5</td>
+              <td>11391.7</td>
+              <td>11476.45</td>
+              <td>10913875</td>
+              <td>12543300000.0</td>
+          </tr>
+          <tr id="LC170" class="js-file-line">
+            <td id="L170" class="blob-num js-line-number" data-line-number="170"></td>
+              <td>2015-09-02</td>
+              <td>11563.95</td>
+              <td>11752.1</td>
+              <td>11510.9</td>
+              <td>11604.7</td>
+              <td>13877743</td>
+              <td>15796199999.999998</td>
+          </tr>
+          <tr id="LC171" class="js-file-line">
+            <td id="L171" class="blob-num js-line-number" data-line-number="171"></td>
+              <td>2015-09-03</td>
+              <td>11679.5</td>
+              <td>11722.8</td>
+              <td>11565.1</td>
+              <td>11672.85</td>
+              <td>10152727</td>
+              <td>11184200000.0</td>
+          </tr>
+          <tr id="LC172" class="js-file-line">
+            <td id="L172" class="blob-num js-line-number" data-line-number="172"></td>
+              <td>2015-09-04</td>
+              <td>11689.8</td>
+              <td>11695.8</td>
+              <td>11392.95</td>
+              <td>11413.6</td>
+              <td>10137864</td>
+              <td>10997800000.0</td>
+          </tr>
+          <tr id="LC173" class="js-file-line">
+            <td id="L173" class="blob-num js-line-number" data-line-number="173"></td>
+              <td>2015-09-07</td>
+              <td>11445.35</td>
+              <td>11451.1</td>
+              <td>11264.7</td>
+              <td>11318.3</td>
+              <td>7491038</td>
+              <td>7888099999.999999</td>
+          </tr>
+          <tr id="LC174" class="js-file-line">
+            <td id="L174" class="blob-num js-line-number" data-line-number="174"></td>
+              <td>2015-09-08</td>
+              <td>11331.65</td>
+              <td>11452.95</td>
+              <td>11279.2</td>
+              <td>11390.1</td>
+              <td>7477071</td>
+              <td>8102000000.0</td>
+          </tr>
+          <tr id="LC175" class="js-file-line">
+            <td id="L175" class="blob-num js-line-number" data-line-number="175"></td>
+              <td>2015-09-09</td>
+              <td>11554.45</td>
+              <td>11604.15</td>
+              <td>11446.35</td>
+              <td>11504.9</td>
+              <td>9610428</td>
+              <td>10650300000.0</td>
+          </tr>
+          <tr id="LC176" class="js-file-line">
+            <td id="L176" class="blob-num js-line-number" data-line-number="176"></td>
+              <td>2015-09-10</td>
+              <td>11439.45</td>
+              <td>11468.95</td>
+              <td>11292.2</td>
+              <td>11396.95</td>
+              <td>10971745</td>
+              <td>12057500000.0</td>
+          </tr>
+          <tr id="LC177" class="js-file-line">
+            <td id="L177" class="blob-num js-line-number" data-line-number="177"></td>
+              <td>2015-09-11</td>
+              <td>11445.65</td>
+              <td>11519.75</td>
+              <td>11381.35</td>
+              <td>11432.25</td>
+              <td>9739475</td>
+              <td>10492800000.0</td>
+          </tr>
+          <tr id="LC178" class="js-file-line">
+            <td id="L178" class="blob-num js-line-number" data-line-number="178"></td>
+              <td>2015-09-14</td>
+              <td>11482.4</td>
+              <td>11527.75</td>
+              <td>11405.35</td>
+              <td>11520.3</td>
+              <td>11970821</td>
+              <td>11569000000.0</td>
+          </tr>
+          <tr id="LC179" class="js-file-line">
+            <td id="L179" class="blob-num js-line-number" data-line-number="179"></td>
+              <td>2015-09-15</td>
+              <td>11524.4</td>
+              <td>11545.3</td>
+              <td>11475.25</td>
+              <td>11536.35</td>
+              <td>8281022</td>
+              <td>8479600000.0</td>
+          </tr>
+          <tr id="LC180" class="js-file-line">
+            <td id="L180" class="blob-num js-line-number" data-line-number="180"></td>
+              <td>2015-09-16</td>
+              <td>11614.7</td>
+              <td>11659.0</td>
+              <td>11563.75</td>
+              <td>11606.65</td>
+              <td>9333693</td>
+              <td>9981900000.0</td>
+          </tr>
+          <tr id="LC181" class="js-file-line">
+            <td id="L181" class="blob-num js-line-number" data-line-number="181"></td>
+              <td>2015-09-18</td>
+              <td>11694.95</td>
+              <td>11801.9</td>
+              <td>11666.85</td>
+              <td>11726.7</td>
+              <td>14942207</td>
+              <td>15353000000.0</td>
+          </tr>
+          <tr id="LC182" class="js-file-line">
+            <td id="L182" class="blob-num js-line-number" data-line-number="182"></td>
+              <td>2015-09-21</td>
+              <td>11659.85</td>
+              <td>11752.85</td>
+              <td>11643.25</td>
+              <td>11724.05</td>
+              <td>7953850</td>
+              <td>7641400000.0</td>
+          </tr>
+          <tr id="LC183" class="js-file-line">
+            <td id="L183" class="blob-num js-line-number" data-line-number="183"></td>
+              <td>2015-09-22</td>
+              <td>11790.5</td>
+              <td>11941.8</td>
+              <td>11615.7</td>
+              <td>11705.55</td>
+              <td>13419167</td>
+              <td>13958400000.0</td>
+          </tr>
+          <tr id="LC184" class="js-file-line">
+            <td id="L184" class="blob-num js-line-number" data-line-number="184"></td>
+              <td>2015-09-23</td>
+              <td>11659.9</td>
+              <td>11753.6</td>
+              <td>11586.9</td>
+              <td>11694.0</td>
+              <td>7367175</td>
+              <td>7690700000.000001</td>
+          </tr>
+          <tr id="LC185" class="js-file-line">
+            <td id="L185" class="blob-num js-line-number" data-line-number="185"></td>
+              <td>2015-09-24</td>
+              <td>11710.75</td>
+              <td>11971.65</td>
+              <td>11677.7</td>
+              <td>11954.1</td>
+              <td>14445662</td>
+              <td>16717400000.0</td>
+          </tr>
+          <tr id="LC186" class="js-file-line">
+            <td id="L186" class="blob-num js-line-number" data-line-number="186"></td>
+              <td>2015-09-28</td>
+              <td>11989.3</td>
+              <td>12008.0</td>
+              <td>11819.2</td>
+              <td>11841.05</td>
+              <td>10087911</td>
+              <td>11629400000.0</td>
+          </tr>
+          <tr id="LC187" class="js-file-line">
+            <td id="L187" class="blob-num js-line-number" data-line-number="187"></td>
+              <td>2015-09-29</td>
+              <td>11768.65</td>
+              <td>11963.2</td>
+              <td>11749.25</td>
+              <td>11863.95</td>
+              <td>11648411</td>
+              <td>13622400000.0</td>
+          </tr>
+          <tr id="LC188" class="js-file-line">
+            <td id="L188" class="blob-num js-line-number" data-line-number="188"></td>
+              <td>2015-09-30</td>
+              <td>12010.75</td>
+              <td>12055.8</td>
+              <td>11904.05</td>
+              <td>12032.1</td>
+              <td>13509491</td>
+              <td>15109600000.0</td>
+          </tr>
+          <tr id="LC189" class="js-file-line">
+            <td id="L189" class="blob-num js-line-number" data-line-number="189"></td>
+              <td>2015-10-01</td>
+              <td>11877.85</td>
+              <td>11998.7</td>
+              <td>11769.5</td>
+              <td>11867.85</td>
+              <td>26288267</td>
+              <td>25906800000.0</td>
+          </tr>
+          <tr id="LC190" class="js-file-line">
+            <td id="L190" class="blob-num js-line-number" data-line-number="190"></td>
+              <td>2015-10-05</td>
+              <td>11867.45</td>
+              <td>12057.1</td>
+              <td>11867.45</td>
+              <td>12002.1</td>
+              <td>16800233</td>
+              <td>19103800000.0</td>
+          </tr>
+          <tr id="LC191" class="js-file-line">
+            <td id="L191" class="blob-num js-line-number" data-line-number="191"></td>
+              <td>2015-10-06</td>
+              <td>12057.45</td>
+              <td>12077.95</td>
+              <td>11865.25</td>
+              <td>11889.9</td>
+              <td>13524583</td>
+              <td>16175200000.0</td>
+          </tr>
+          <tr id="LC192" class="js-file-line">
+            <td id="L192" class="blob-num js-line-number" data-line-number="192"></td>
+              <td>2015-10-07</td>
+              <td>11878.35</td>
+              <td>11904.5</td>
+              <td>11660.7</td>
+              <td>11683.45</td>
+              <td>15333772</td>
+              <td>15796400000.000002</td>
+          </tr>
+          <tr id="LC193" class="js-file-line">
+            <td id="L193" class="blob-num js-line-number" data-line-number="193"></td>
+              <td>2015-10-08</td>
+              <td>11753.85</td>
+              <td>11802.15</td>
+              <td>11625.65</td>
+              <td>11669.7</td>
+              <td>17897751</td>
+              <td>18086800000.0</td>
+          </tr>
+          <tr id="LC194" class="js-file-line">
+            <td id="L194" class="blob-num js-line-number" data-line-number="194"></td>
+              <td>2015-10-09</td>
+              <td>11734.3</td>
+              <td>11827.5</td>
+              <td>11676.15</td>
+              <td>11807.55</td>
+              <td>15125896</td>
+              <td>16334800000.0</td>
+          </tr>
+          <tr id="LC195" class="js-file-line">
+            <td id="L195" class="blob-num js-line-number" data-line-number="195"></td>
+              <td>2015-10-12</td>
+              <td>11972.1</td>
+              <td>12019.05</td>
+              <td>11571.75</td>
+              <td>11630.65</td>
+              <td>21238152</td>
+              <td>24456300000.0</td>
+          </tr>
+          <tr id="LC196" class="js-file-line">
+            <td id="L196" class="blob-num js-line-number" data-line-number="196"></td>
+              <td>2015-10-13</td>
+              <td>11595.85</td>
+              <td>11603.9</td>
+              <td>11452.3</td>
+              <td>11522.6</td>
+              <td>16373500</td>
+              <td>21069600000.0</td>
+          </tr>
+          <tr id="LC197" class="js-file-line">
+            <td id="L197" class="blob-num js-line-number" data-line-number="197"></td>
+              <td>2015-10-14</td>
+              <td>11435.3</td>
+              <td>11479.4</td>
+              <td>11347.65</td>
+              <td>11362.9</td>
+              <td>12980966</td>
+              <td>18742700000.0</td>
+          </tr>
+          <tr id="LC198" class="js-file-line">
+            <td id="L198" class="blob-num js-line-number" data-line-number="198"></td>
+              <td>2015-10-15</td>
+              <td>11407.55</td>
+              <td>11411.4</td>
+              <td>11310.45</td>
+              <td>11338.35</td>
+              <td>11632842</td>
+              <td>12995100000.0</td>
+          </tr>
+          <tr id="LC199" class="js-file-line">
+            <td id="L199" class="blob-num js-line-number" data-line-number="199"></td>
+              <td>2015-10-16</td>
+              <td>11392.55</td>
+              <td>11402.5</td>
+              <td>11301.1</td>
+              <td>11337.8</td>
+              <td>10989166</td>
+              <td>11769600000.0</td>
+          </tr>
+          <tr id="LC200" class="js-file-line">
+            <td id="L200" class="blob-num js-line-number" data-line-number="200"></td>
+              <td>2015-10-19</td>
+              <td>11360.4</td>
+              <td>11469.2</td>
+              <td>11305.85</td>
+              <td>11432.15</td>
+              <td>13238516</td>
+              <td>14178400000.0</td>
+          </tr>
+          <tr id="LC201" class="js-file-line">
+            <td id="L201" class="blob-num js-line-number" data-line-number="201"></td>
+              <td>2015-10-20</td>
+              <td>11465.05</td>
+              <td>11539.25</td>
+              <td>11436.65</td>
+              <td>11529.6</td>
+              <td>11787811</td>
+              <td>13049800000.0</td>
+          </tr>
+          <tr id="LC202" class="js-file-line">
+            <td id="L202" class="blob-num js-line-number" data-line-number="202"></td>
+              <td>2015-10-21</td>
+              <td>11552.6</td>
+              <td>11583.45</td>
+              <td>11501.05</td>
+              <td>11549.05</td>
+              <td>9019619</td>
+              <td>9814900000.0</td>
+          </tr>
+          <tr id="LC203" class="js-file-line">
+            <td id="L203" class="blob-num js-line-number" data-line-number="203"></td>
+              <td>2015-10-23</td>
+              <td>11588.0</td>
+              <td>11588.2</td>
+              <td>11494.15</td>
+              <td>11552.0</td>
+              <td>9686270</td>
+              <td>10325300000.0</td>
+          </tr>
+          <tr id="LC204" class="js-file-line">
+            <td id="L204" class="blob-num js-line-number" data-line-number="204"></td>
+              <td>2015-10-26</td>
+              <td>11597.9</td>
+              <td>11612.7</td>
+              <td>11537.1</td>
+              <td>11576.35</td>
+              <td>7032459</td>
+              <td>7421300000.0</td>
+          </tr>
+          <tr id="LC205" class="js-file-line">
+            <td id="L205" class="blob-num js-line-number" data-line-number="205"></td>
+              <td>2015-10-27</td>
+              <td>11570.3</td>
+              <td>11601.25</td>
+              <td>11533.05</td>
+              <td>11583.55</td>
+              <td>9938684</td>
+              <td>9761600000.0</td>
+          </tr>
+          <tr id="LC206" class="js-file-line">
+            <td id="L206" class="blob-num js-line-number" data-line-number="206"></td>
+              <td>2015-10-28</td>
+              <td>11546.05</td>
+              <td>11664.95</td>
+              <td>11537.3</td>
+              <td>11643.3</td>
+              <td>9103066</td>
+              <td>9023500000.0</td>
+          </tr>
+          <tr id="LC207" class="js-file-line">
+            <td id="L207" class="blob-num js-line-number" data-line-number="207"></td>
+              <td>2015-10-29</td>
+              <td>11644.05</td>
+              <td>11644.05</td>
+              <td>11523.95</td>
+              <td>11548.15</td>
+              <td>15019766</td>
+              <td>15486900000.0</td>
+          </tr>
+          <tr id="LC208" class="js-file-line">
+            <td id="L208" class="blob-num js-line-number" data-line-number="208"></td>
+              <td>2015-10-30</td>
+              <td>11549.75</td>
+              <td>11559.35</td>
+              <td>11467.9</td>
+              <td>11486.9</td>
+              <td>9332157</td>
+              <td>9302200000.0</td>
+          </tr>
+          <tr id="LC209" class="js-file-line">
+            <td id="L209" class="blob-num js-line-number" data-line-number="209"></td>
+              <td>2015-11-02</td>
+              <td>11497.95</td>
+              <td>11560.6</td>
+              <td>11428.1</td>
+              <td>11546.25</td>
+              <td>8710084</td>
+              <td>8150599999.999999</td>
+          </tr>
+          <tr id="LC210" class="js-file-line">
+            <td id="L210" class="blob-num js-line-number" data-line-number="210"></td>
+              <td>2015-11-03</td>
+              <td>11576.0</td>
+              <td>11627.85</td>
+              <td>11565.0</td>
+              <td>11618.4</td>
+              <td>7567658</td>
+              <td>7548600000.0</td>
+          </tr>
+          <tr id="LC211" class="js-file-line">
+            <td id="L211" class="blob-num js-line-number" data-line-number="211"></td>
+              <td>2015-11-04</td>
+              <td>11680.15</td>
+              <td>11688.65</td>
+              <td>11535.95</td>
+              <td>11551.6</td>
+              <td>9660090</td>
+              <td>8306300000.0</td>
+          </tr>
+          <tr id="LC212" class="js-file-line">
+            <td id="L212" class="blob-num js-line-number" data-line-number="212"></td>
+              <td>2015-11-05</td>
+              <td>11573.1</td>
+              <td>11573.1</td>
+              <td>11397.5</td>
+              <td>11414.45</td>
+              <td>6980714</td>
+              <td>7088900000.0</td>
+          </tr>
+          <tr id="LC213" class="js-file-line">
+            <td id="L213" class="blob-num js-line-number" data-line-number="213"></td>
+              <td>2015-11-06</td>
+              <td>11424.2</td>
+              <td>11515.65</td>
+              <td>11422.95</td>
+              <td>11485.45</td>
+              <td>6480847</td>
+              <td>6426400000.0</td>
+          </tr>
+          <tr id="LC214" class="js-file-line">
+            <td id="L214" class="blob-num js-line-number" data-line-number="214"></td>
+              <td>2015-11-09</td>
+              <td>11364.55</td>
+              <td>11427.95</td>
+              <td>11320.95</td>
+              <td>11412.15</td>
+              <td>10126396</td>
+              <td>10092000000.0</td>
+          </tr>
+          <tr id="LC215" class="js-file-line">
+            <td id="L215" class="blob-num js-line-number" data-line-number="215"></td>
+              <td>2015-11-10</td>
+              <td>11385.7</td>
+              <td>11387.85</td>
+              <td>11191.9</td>
+              <td>11214.2</td>
+              <td>6966686</td>
+              <td>7369200000.0</td>
+          </tr>
+          <tr id="LC216" class="js-file-line">
+            <td id="L216" class="blob-num js-line-number" data-line-number="216"></td>
+              <td>2015-11-11</td>
+              <td>11305.2</td>
+              <td>11312.3</td>
+              <td>11230.4</td>
+              <td>11249.7</td>
+              <td>795240</td>
+              <td>827200000.0</td>
+          </tr>
+          <tr id="LC217" class="js-file-line">
+            <td id="L217" class="blob-num js-line-number" data-line-number="217"></td>
+              <td>2015-11-13</td>
+              <td>11110.75</td>
+              <td>11176.75</td>
+              <td>11027.1</td>
+              <td>11102.45</td>
+              <td>6927725</td>
+              <td>8085599999.999999</td>
+          </tr>
+          <tr id="LC218" class="js-file-line">
+            <td id="L218" class="blob-num js-line-number" data-line-number="218"></td>
+              <td>2015-11-16</td>
+              <td>11011.5</td>
+              <td>11061.6</td>
+              <td>10911.1</td>
+              <td>11003.8</td>
+              <td>8864946</td>
+              <td>9172700000.0</td>
+          </tr>
+          <tr id="LC219" class="js-file-line">
+            <td id="L219" class="blob-num js-line-number" data-line-number="219"></td>
+              <td>2015-11-17</td>
+              <td>11032.45</td>
+              <td>11052.4</td>
+              <td>10974.55</td>
+              <td>11035.1</td>
+              <td>10917373</td>
+              <td>10768800000.000002</td>
+          </tr>
+          <tr id="LC220" class="js-file-line">
+            <td id="L220" class="blob-num js-line-number" data-line-number="220"></td>
+              <td>2015-11-18</td>
+              <td>10967.75</td>
+              <td>10969.5</td>
+              <td>10799.0</td>
+              <td>10836.7</td>
+              <td>10167296</td>
+              <td>10129200000.0</td>
+          </tr>
+          <tr id="LC221" class="js-file-line">
+            <td id="L221" class="blob-num js-line-number" data-line-number="221"></td>
+              <td>2015-11-19</td>
+              <td>10910.5</td>
+              <td>11059.85</td>
+              <td>10893.75</td>
+              <td>11032.9</td>
+              <td>9850813</td>
+              <td>10086300000.0</td>
+          </tr>
+          <tr id="LC222" class="js-file-line">
+            <td id="L222" class="blob-num js-line-number" data-line-number="222"></td>
+              <td>2015-11-20</td>
+              <td>11045.65</td>
+              <td>11195.75</td>
+              <td>11036.9</td>
+              <td>11118.85</td>
+              <td>10781657</td>
+              <td>10713800000.000002</td>
+          </tr>
+          <tr id="LC223" class="js-file-line">
+            <td id="L223" class="blob-num js-line-number" data-line-number="223"></td>
+              <td>2015-11-23</td>
+              <td>11126.25</td>
+              <td>11189.5</td>
+              <td>11084.35</td>
+              <td>11121.2</td>
+              <td>8727231</td>
+              <td>8513000000.0</td>
+          </tr>
+          <tr id="LC224" class="js-file-line">
+            <td id="L224" class="blob-num js-line-number" data-line-number="224"></td>
+              <td>2015-11-24</td>
+              <td>11096.4</td>
+              <td>11122.05</td>
+              <td>11036.05</td>
+              <td>11057.35</td>
+              <td>7784549</td>
+              <td>7501700000.0</td>
+          </tr>
+          <tr id="LC225" class="js-file-line">
+            <td id="L225" class="blob-num js-line-number" data-line-number="225"></td>
+              <td>2015-11-26</td>
+              <td>11048.4</td>
+              <td>11129.25</td>
+              <td>11013.9</td>
+              <td>11042.95</td>
+              <td>15045631</td>
+              <td>14925400000.0</td>
+          </tr>
+          <tr id="LC226" class="js-file-line">
+            <td id="L226" class="blob-num js-line-number" data-line-number="226"></td>
+              <td>2015-11-27</td>
+              <td>11064.6</td>
+              <td>11136.4</td>
+              <td>11031.45</td>
+              <td>11122.9</td>
+              <td>7402279</td>
+              <td>7693000000.0</td>
+          </tr>
+          <tr id="LC227" class="js-file-line">
+            <td id="L227" class="blob-num js-line-number" data-line-number="227"></td>
+              <td>2015-11-30</td>
+              <td>11147.85</td>
+              <td>11279.65</td>
+              <td>11083.6</td>
+              <td>11206.0</td>
+              <td>21067524</td>
+              <td>21548700000.0</td>
+          </tr>
+          <tr id="LC228" class="js-file-line">
+            <td id="L228" class="blob-num js-line-number" data-line-number="228"></td>
+              <td>2015-12-01</td>
+              <td>11216.95</td>
+              <td>11293.2</td>
+              <td>11216.95</td>
+              <td>11256.3</td>
+              <td>9112940</td>
+              <td>9271000000.0</td>
+          </tr>
+          <tr id="LC229" class="js-file-line">
+            <td id="L229" class="blob-num js-line-number" data-line-number="229"></td>
+              <td>2015-12-02</td>
+              <td>11298.9</td>
+              <td>11298.9</td>
+              <td>11134.9</td>
+              <td>11149.6</td>
+              <td>7524996</td>
+              <td>8086300000.0</td>
+          </tr>
+          <tr id="LC230" class="js-file-line">
+            <td id="L230" class="blob-num js-line-number" data-line-number="230"></td>
+              <td>2015-12-03</td>
+              <td>11149.3</td>
+              <td>11153.7</td>
+              <td>11067.55</td>
+              <td>11081.9</td>
+              <td>9384540</td>
+              <td>9792900000.0</td>
+          </tr>
+          <tr id="LC231" class="js-file-line">
+            <td id="L231" class="blob-num js-line-number" data-line-number="231"></td>
+              <td>2015-12-04</td>
+              <td>11034.65</td>
+              <td>11037.95</td>
+              <td>10940.3</td>
+              <td>10969.05</td>
+              <td>10062731</td>
+              <td>9755500000.0</td>
+          </tr>
+          <tr id="LC232" class="js-file-line">
+            <td id="L232" class="blob-num js-line-number" data-line-number="232"></td>
+              <td>2015-12-07</td>
+              <td>11009.5</td>
+              <td>11054.0</td>
+              <td>10943.85</td>
+              <td>10998.65</td>
+              <td>8477753</td>
+              <td>8108600000.0</td>
+          </tr>
+          <tr id="LC233" class="js-file-line">
+            <td id="L233" class="blob-num js-line-number" data-line-number="233"></td>
+              <td>2015-12-08</td>
+              <td>10989.2</td>
+              <td>11109.3</td>
+              <td>10946.0</td>
+              <td>10981.85</td>
+              <td>8486760</td>
+              <td>8256700000.0</td>
+          </tr>
+          <tr id="LC234" class="js-file-line">
+            <td id="L234" class="blob-num js-line-number" data-line-number="234"></td>
+              <td>2015-12-09</td>
+              <td>10978.25</td>
+              <td>11027.3</td>
+              <td>10916.25</td>
+              <td>10930.05</td>
+              <td>11006038</td>
+              <td>13524000000.0</td>
+          </tr>
+          <tr id="LC235" class="js-file-line">
+            <td id="L235" class="blob-num js-line-number" data-line-number="235"></td>
+              <td>2015-12-10</td>
+              <td>10971.55</td>
+              <td>11073.15</td>
+              <td>10931.15</td>
+              <td>11055.5</td>
+              <td>7908231</td>
+              <td>8326600000.0</td>
+          </tr>
+          <tr id="LC236" class="js-file-line">
+            <td id="L236" class="blob-num js-line-number" data-line-number="236"></td>
+              <td>2015-12-11</td>
+              <td>11086.55</td>
+              <td>11086.55</td>
+              <td>11015.6</td>
+              <td>11043.05</td>
+              <td>8502528</td>
+              <td>9019600000.0</td>
+          </tr>
+          <tr id="LC237" class="js-file-line">
+            <td id="L237" class="blob-num js-line-number" data-line-number="237"></td>
+              <td>2015-12-14</td>
+              <td>10940.75</td>
+              <td>11124.9</td>
+              <td>10940.75</td>
+              <td>11099.7</td>
+              <td>7044052</td>
+              <td>8280500000.0</td>
+          </tr>
+          <tr id="LC238" class="js-file-line">
+            <td id="L238" class="blob-num js-line-number" data-line-number="238"></td>
+              <td>2015-12-15</td>
+              <td>11139.55</td>
+              <td>11139.55</td>
+              <td>11044.35</td>
+              <td>11058.25</td>
+              <td>9065922</td>
+              <td>8154000000.0</td>
+          </tr>
+          <tr id="LC239" class="js-file-line">
+            <td id="L239" class="blob-num js-line-number" data-line-number="239"></td>
+              <td>2015-12-16</td>
+              <td>11081.75</td>
+              <td>11187.85</td>
+              <td>11081.75</td>
+              <td>11144.9</td>
+              <td>8751937</td>
+              <td>8490500000.0</td>
+          </tr>
+          <tr id="LC240" class="js-file-line">
+            <td id="L240" class="blob-num js-line-number" data-line-number="240"></td>
+              <td>2015-12-17</td>
+              <td>11182.95</td>
+              <td>11293.05</td>
+              <td>11122.45</td>
+              <td>11275.15</td>
+              <td>9556916</td>
+              <td>9097200000.0</td>
+          </tr>
+          <tr id="LC241" class="js-file-line">
+            <td id="L241" class="blob-num js-line-number" data-line-number="241"></td>
+              <td>2015-12-18</td>
+              <td>11227.15</td>
+              <td>11227.15</td>
+              <td>11094.8</td>
+              <td>11122.5</td>
+              <td>11781399</td>
+              <td>12224500000.0</td>
+          </tr>
+          <tr id="LC242" class="js-file-line">
+            <td id="L242" class="blob-num js-line-number" data-line-number="242"></td>
+              <td>2015-12-21</td>
+              <td>11096.4</td>
+              <td>11232.5</td>
+              <td>11067.2</td>
+              <td>11224.75</td>
+              <td>6043899</td>
+              <td>6415599999.999999</td>
+          </tr>
+          <tr id="LC243" class="js-file-line">
+            <td id="L243" class="blob-num js-line-number" data-line-number="243"></td>
+              <td>2015-12-22</td>
+              <td>11201.8</td>
+              <td>11201.8</td>
+              <td>11081.15</td>
+              <td>11095.45</td>
+              <td>5998230</td>
+              <td>6366300000.0</td>
+          </tr>
+          <tr id="LC244" class="js-file-line">
+            <td id="L244" class="blob-num js-line-number" data-line-number="244"></td>
+              <td>2015-12-23</td>
+              <td>11163.8</td>
+              <td>11206.4</td>
+              <td>11130.65</td>
+              <td>11195.65</td>
+              <td>4638075</td>
+              <td>4562900000.0</td>
+          </tr>
+          <tr id="LC245" class="js-file-line">
+            <td id="L245" class="blob-num js-line-number" data-line-number="245"></td>
+              <td>2015-12-24</td>
+              <td>11193.25</td>
+              <td>11197.5</td>
+              <td>11152.85</td>
+              <td>11184.9</td>
+              <td>2927864</td>
+              <td>3182700000.0</td>
+          </tr>
+          <tr id="LC246" class="js-file-line">
+            <td id="L246" class="blob-num js-line-number" data-line-number="246"></td>
+              <td>2015-12-28</td>
+              <td>11152.7</td>
+              <td>11303.05</td>
+              <td>11146.85</td>
+              <td>11271.8</td>
+              <td>8055590</td>
+              <td>10019000000.0</td>
+          </tr>
+          <tr id="LC247" class="js-file-line">
+            <td id="L247" class="blob-num js-line-number" data-line-number="247"></td>
+              <td>2015-12-29</td>
+              <td>11257.05</td>
+              <td>11287.5</td>
+              <td>11206.6</td>
+              <td>11253.45</td>
+              <td>6024174</td>
+              <td>6626200000.0</td>
+          </tr>
+          <tr id="LC248" class="js-file-line">
+            <td id="L248" class="blob-num js-line-number" data-line-number="248"></td>
+              <td>2015-12-30</td>
+              <td>11247.35</td>
+              <td>11263.6</td>
+              <td>11100.1</td>
+              <td>11117.6</td>
+              <td>6564991</td>
+              <td>7071900000.000001</td>
+          </tr>
+          <tr id="LC249" class="js-file-line">
+            <td id="L249" class="blob-num js-line-number" data-line-number="249"></td>
+              <td>2015-12-31</td>
+              <td>11113.0</td>
+              <td>11233.85</td>
+              <td>11113.0</td>
+              <td>11212.55</td>
+              <td>8197040</td>
+              <td>8590500000.0</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+
+  </div>
+
+    </div>
+
+  
+
+  <details class="details-reset details-overlay details-overlay-dark">
+    <summary data-hotkey="l" aria-label="Jump to line"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast linejump" aria-label="Jump to line">
+      <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="js-jump-to-line-form Box-body d-flex" action="" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+        <input class="form-control flex-auto mr-3 linejump-input js-jump-to-line-field" type="text" placeholder="Jump to line&hellip;" aria-label="Jump to line" autofocus>
+        <button type="submit" class="btn" data-close-dialog>Go</button>
+</form>    </details-dialog>
+  </details>
+
+
+
+  </div>
+  <div class="modal-backdrop js-touch-events"></div>
+</div>
+
+    </main>
+  </div>
+  
+
+  </div>
+
+        
+<div class="footer container-lg px-3" role="contentinfo">
+  <div class="position-relative d-flex flex-justify-between pt-6 pb-2 mt-6 f6 text-gray border-top border-gray-light ">
+    <ul class="list-style-none d-flex flex-wrap ">
+      <li class="mr-3">&copy; 2019 <span title="0.57859s from unicorn-55c477ccb5-vwlwg">GitHub</span>, Inc.</li>
+        <li class="mr-3"><a data-ga-click="Footer, go to terms, text:terms" href="https://github.com/site/terms">Terms</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to privacy, text:privacy" href="https://github.com/site/privacy">Privacy</a></li>
+        <li class="mr-3"><a data-ga-click="Footer, go to security, text:security" href="https://github.com/security">Security</a></li>
+        <li class="mr-3"><a href="https://githubstatus.com/" data-ga-click="Footer, go to status, text:status">Status</a></li>
+        <li><a data-ga-click="Footer, go to help, text:help" href="https://help.github.com">Help</a></li>
+    </ul>
+
+    <a aria-label="Homepage" title="GitHub" class="footer-octicon mr-lg-4" href="https://github.com">
+      <svg height="24" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="24" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+</a>
+   <ul class="list-style-none d-flex flex-wrap ">
+        <li class="mr-3"><a data-ga-click="Footer, go to contact, text:contact" href="https://github.com/contact">Contact GitHub</a></li>
+        <li class="mr-3"><a href="https://github.com/pricing" data-ga-click="Footer, go to Pricing, text:Pricing">Pricing</a></li>
+      <li class="mr-3"><a href="https://developer.github.com" data-ga-click="Footer, go to api, text:api">API</a></li>
+      <li class="mr-3"><a href="https://training.github.com" data-ga-click="Footer, go to training, text:training">Training</a></li>
+        <li class="mr-3"><a href="https://github.blog" data-ga-click="Footer, go to blog, text:blog">Blog</a></li>
+        <li><a data-ga-click="Footer, go to about, text:about" href="https://github.com/about">About</a></li>
+
+    </ul>
+  </div>
+  <div class="d-flex flex-justify-center pb-6">
+    <span class="f6 text-gray-light"></span>
+  </div>
+</div>
+
+
+
+  <div id="ajax-error-message" class="ajax-error-message flash flash-error">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <button type="button" class="flash-close js-ajax-error-dismiss" aria-label="Dismiss error">
+      <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+    </button>
+    You can’t perform that action at this time.
+  </div>
+
+
+    
+    <script crossorigin="anonymous" integrity="sha512-3xoVN5Gv/jGY+cP8LfhoI54EFBhCVRxuPhpXkuVdbL932EmZ7UP6IjvKD9/S0Vg+HqEqHwmuC5inZCFyWNyAww==" type="application/javascript" src="https://github.githubassets.com/assets/frameworks-b740280f.js"></script>
+    
+    <script crossorigin="anonymous" async="async" integrity="sha512-1+v+rVM59IoO5f104NM9+sFi0q+4gFq8p6VZaBIUNfQN2mjkIHZ9ifdyWHfu6mrVDYW0kOgTn8DlQYX5fRBNNg==" type="application/javascript" src="https://github.githubassets.com/assets/github-bootstrap-1586c334.js"></script>
+    
+    
+    
+  <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner d-none">
+    <svg class="octicon octicon-alert" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8.893 1.5c-.183-.31-.52-.5-.887-.5s-.703.19-.886.5L.138 13.499a.98.98 0 0 0 0 1.001c.193.31.53.501.886.501h13.964c.367 0 .704-.19.877-.5a1.03 1.03 0 0 0 .01-1.002L8.893 1.5zm.133 11.497H6.987v-2.003h2.039v2.003zm0-3.004H6.987V5.987h2.039v4.006z"/></svg>
+    <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
+    <span class="signed-out-tab-flash">You signed out in another tab or window. <a href="">Reload</a> to refresh your session.</span>
+  </div>
+  <template id="site-details-dialog">
+  <details class="details-reset details-overlay details-overlay-dark lh-default text-gray-dark" open>
+    <summary aria-haspopup="dialog" aria-label="Close dialog"></summary>
+    <details-dialog class="Box Box--overlay d-flex flex-column anim-fade-in fast">
+      <button class="Box-btn-octicon m-0 btn-octicon position-absolute right-0 top-0" type="button" aria-label="Close dialog" data-close-dialog>
+        <svg class="octicon octicon-x" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.48 8l3.75 3.75-1.48 1.48L6 9.48l-3.75 3.75-1.48-1.48L4.52 8 .77 4.25l1.48-1.48L6 6.52l3.75-3.75 1.48 1.48L7.48 8z"/></svg>
+      </button>
+      <div class="octocat-spinner my-6 js-details-dialog-spinner"></div>
+    </details-dialog>
+  </details>
+</template>
+
+  <div class="Popover js-hovercard-content position-absolute" style="display: none; outline: none;" tabindex="0">
+  <div class="Popover-message Popover-message--bottom-left Popover-message--large Box box-shadow-large" style="width:360px;">
+  </div>
+</div>
+
+  <div aria-live="polite" class="js-global-screen-reader-notice sr-only"></div>
+
+  </body>
+</html>
+
