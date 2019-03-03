@@ -49,6 +49,7 @@ for i in range(len(stocks)):
 
 TCS.shape #for checking new features
 
+
 #PART - 1
 #Create 4,16,....,52 week moving average(closing price) for each stock and index. This should happen through a function.
 
@@ -91,4 +92,38 @@ timeseriesplotting(NIFTY)
 timeseriesplotting(TCS)  
 timeseriesplotting(INFY)    
     
+###2.Create rolling window of size 10 on each stock/index. Handle unequal time series due to stock market holidays.
+###You should look to increase your rolling window size to 75 and see how the data looks like.   
+###Remember they will create stress on your laptop RAM load. ( Documentation you might need: http://in.mathworks.com/help/econ/rolling-window-estimation-of-state-space-models.html)
+
+# For the question two, we have increase the rolling window size from 10 to 75. For rolling window we need to resample as per days.
+#by considering only the stock market holidays(i.e., saturdays and sundays - stock market holidays)withpout special holidays instead of using resample() we use resample.Resampler.asfreq() function.
+#this is because it provide us option of padding (backwardfill/forwardfill missing values "not NANs" )
+#source: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.asfreq.html We are using this, because on saturdays and sundays, market remains closed, so friday's close price could be forwarded in closing days.
+
+
+TCS = TCS.asfreq('D', method ='pad')        # pad-fill : forward-fill
+INFY = INFY.asfreq('D', method ='pad')
+NIFTY = NIFTY.asfreq('D', method ='pad')
+
+
+TCS.name = 'TCS'
+INFY.name = 'INFY'
+NIFTY.name = 'NIFTY_IT'
+
+def rollingwindow_plotting(stock, win = [10, 75]):
     
+    dummyrollingwindow = pd.DataFrame()
+    
+    dummyrollingwindow['Close'] = stock['Close']
+     
+    for i in range(len(win)):
+        moving_average = dummyrollingwindow['Close'].rolling(win[i]).mean() # M.A using predefined function
+        dummyrollingwindow[" moving average of " + str(win[i])+ " Roll Window"] = moving_average
+        print('Moving Averages of {0} weeks: \n\n {1}' .format(win[i], dummyrollingwindow['Close']))
+    dummyrollingwindow.plot(title="Moving Averages for {} \n\n" .format(stock.name))
+    
+rollingwindow_plotting(TCS)
+rollingwindow_plotting(INFY)
+rollingwindow_plotting(NIFTY)
+
