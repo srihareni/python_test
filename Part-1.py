@@ -111,6 +111,9 @@ TCS.name = 'TCS'
 INFY.name = 'INFY'
 NIFTY.name = 'NIFTY_IT'
 
+
+
+#poltting rolling window
 def rollingwindow_plotting(stock, win = [10, 75]):
     
     dummyrollingwindow = pd.DataFrame()
@@ -126,4 +129,92 @@ def rollingwindow_plotting(stock, win = [10, 75]):
 rollingwindow_plotting(TCS)
 rollingwindow_plotting(INFY)
 rollingwindow_plotting(NIFTY)
+
+##Volumeshocks
+def volumeshocks(stock):
+    """
+    'Volume' - Vol_t
+    'Volume next day - vol_t+1
+    
+    """
+    stock["vol_t+1"] = stock.Volume.shift(1)  #next rows value
+    
+    stock["volumeshock"] = ((abs(stock["vol_t+1"] - stock["Volume"])/stock["Volume"]*100)  > 10).astype(int)
+    
+    return stock
+volumeshocks(TCS)
+volumeshocks(INFY)
+volumeshocks(NIFTY)
+
+##Volume Shock Direction
+
+def directionfunction(stock):
+    
+    # considerng only shock - 1 valued rows.
+    # 0 - negative and 1- positive
+    if stock["volumeshock"] == 0:
+        pass
+    else:
+        if (stock["vol_t+1"] - stock["Volume"]) < 0:
+            return 0
+        else:
+            return 1
+       
+def volumeshockdirection(stock):
+    stock['VOLUMESHOCKDIRECTION'] = 'Nan'
+    stock['VOLUMESHOCKDIRECTION'] = stock.apply(directionfunction, axis=1)
+    return stock
+volumeshockdirection(TCS)
+volumeshockdirection(INFY)
+volumeshockdirection(NIFTY)
+
+##Price shocks
+
+def priceshocks(stock):
+    """
+    'ClosePrice' - Close_t
+    'Close Price next day - vol_t+1
+    
+    """
+    stock["price_t+1"] = stock.Close.shift(1)  #next rows value
+    
+    stock["priceshock"] = (abs((stock["price_t+1"] - stock["Close"])/stock["Close"]*100)  > 2).astype(int)
+    
+    stock["priceblackswan"] = stock['priceshock'] # Since both had same data anad info/
+    
+    return stock
+
+##Price Shock Direction and Black Swan shock direction (both same)
+
+def directionfunctionprice(stock):
+    
+    # considerng only shock - 1 valued rows.
+    # 0 - negative and 1- positive
+    if stock["priceshock"] == 0:
+        pass
+    else:
+        if (stock["price_t+1"] - stock["Close"]) < 0:
+            return 0
+        else:
+            return 1
+def priceshockdirection(stock):
+    stock['PRICESHOCKDIRECTION'] = 'Nan'
+    stock['PRICESHOCKDIRECTION'] = stock.apply(directionfunctionprice, axis=1)
+    return stock
+
+priceshockdirection(TCS)
+priceshockdirection(INFY)
+priceshockdirection(NIFTY)
+
+##Price Shock w/o volume shocks
+
+def priceshock_wo_volshock(stock):
+    
+    stock["not_volshock"]  = (~(stock["volumeshock"].astype(bool))).astype(int)
+    stock["priceshock_w/0_volshock"] = stock["not_volshock"] & stock["priceshock"]
+    
+    return stock
+priceshock_wo_volshock(TCS)
+priceshock_wo_volshock(INFY)
+priceshock_wo_volshock(NIFTY)
 
