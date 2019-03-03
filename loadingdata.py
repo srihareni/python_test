@@ -11,7 +11,7 @@ TCS.insert(0, 'Date',  pd.to_datetime(TCS.index,format='%Y-%m-%d') )
 type(TCS.index)
 type(TCS.Date)
 TCS.Date.dt
-TCS.to_csv('TCS.csv', encoding='utf-8', index=False)
+TCS.to_csv('C:/Users/SRIHARINI/Desktop/dat/TCS.csv', encoding='utf-8', index=False)
 
 
 
@@ -24,7 +24,7 @@ INFY.insert(0, 'Date',  pd.to_datetime(TCS.index,format='%Y-%m-%d') )
 type(INFY.index)
 type(INFY.Date)
 INFY.Date.dt
-INFY.to_csv('INFY.csv', encoding='utf-8', index=False)
+INFY.to_csv('C:/Users/SRIHARINI/Desktop/dat/INFY.csv', encoding='utf-8', index=False)
 
 
 
@@ -37,4 +37,4 @@ nifty_it.insert(0, 'Date',  pd.to_datetime(nifty_it.index,format='%Y-%m-%d') )
 type(nifty_it.index)
 type(nifty_it.Date)
 nifty_it.Date.dt
-nifty_it.to_csv('INFY.csv', encoding='utf-8', index=False)
+nifty_it.to_csv('C:/Users/SRIHARINI/Desktop/dat/nifty_it.csv', encoding='utf-8', index=False)
