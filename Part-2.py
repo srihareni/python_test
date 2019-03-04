@@ -19,4 +19,10 @@ def bokehplot(stock):
     
     plot.circle(stock.index, stock.Close*stock["priceshock_w/0_volshock"], size=4, legend='price shock without vol shock')
     show(plot)
-output_file("timeseries.html")
+output_file("C:/Users/SRIHARINI/Desktop/output_part-2/timeseries.html")
+
+bokehplot(TCS)
+bokehplot(INFY)
+bokehplot(NIFTY)
+
+
