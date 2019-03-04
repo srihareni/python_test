@@ -12,11 +12,11 @@ output_notebook()
 def bokehplot(stock):
     dataset = dict(stock=stock['Close'], Date=stock.index)
   
-    p = figure(plot_width=800, plot_height=250,  title = 'time series for {}' .format(stock.name), x_axis_type="datetime")
-    p.line(stock.index, stock['Close'], color='blue', alpha=0.5)
+    plot = figure(plot_width=800, plot_height=250,  title = 'time series for {}' .format(stock.name), x_axis_type="datetime")
+    plot.line(stock.index, stock['Close'], color='blue', alpha=0.5)
     
     #show price shock w/o vol shock
     
-    p.circle(stock.index, stock.Close*stock["priceshock_w/0_volshock"], size=4, legend='price shock without vol shock')
-    show(p)
+    plot.circle(stock.index, stock.Close*stock["priceshock_w/0_volshock"], size=4, legend='price shock without vol shock')
+    show(plot)
 output_file("timeseries.html")
